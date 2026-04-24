@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Hand with spread fingers, palm base -->
+  <path d="M96 155 L96 72" stroke="#FFFFFF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M96 155 L68 68" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  <path d="M96 155 L44 94" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  <path d="M96 155 L124 68" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  <path d="M96 155 L148 94" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+  <path d="M44 120 Q60 148 96 152 Q132 148 148 120" fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round"/>
+</svg>

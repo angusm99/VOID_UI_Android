@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:gravity="center"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOID UI"
+        android:textColor="#FFFFFF"
+        android:textSize="42sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ICON PACK"
+        android:textColor="#555555"
+        android:textSize="14sp"
+        android:letterSpacing="0.4"
+        android:layout_marginBottom="48dp"/>
+
+    <View
+        android:layout_width="48dp"
+        android:layout_height="1dp"
+        android:background="#333333"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="164 icons"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Apply in Nova, Niagara, Apex, Action or Lawnchair launcher"
+        android:textColor="#666666"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:layout_marginBottom="48dp"/>
+
+    <TextView
+        android:id="@+id/launcher_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open your launcher settings\nLook for 'Icon pack' or 'Themes'\nSelect VOID UI"
+        android:textColor="#444444"
+        android:textSize="13sp"
+        android:lineSpacingMultiplier="1.6"
+        android:gravity="center"/>
+
+</LinearLayout>

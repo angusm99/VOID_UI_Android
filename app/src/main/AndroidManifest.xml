@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.voidui.iconpack">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Main launcher activity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Nova Launcher icon pack support -->
+        <activity
+            android:name=".IconPackActivity"
+            android:exported="true"
+            android:icon="@mipmap/ic_launcher"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="com.novalauncher.THEME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.adw.launcher.THEMES" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.dlto.atom.launcher.THEME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.anddoes.launcher.THEME" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.teslacoilsw.launcher.THEME" />
+            </intent-filter>
+            <!-- Apex Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.anddoes.launcher.THEME" />
+            </intent-filter>
+            <!-- Action Launcher -->
+            <intent-filter>
+                <action android:name="com.actionlauncher.playstore.ICON_PACK" />
+            </intent-filter>
+            <!-- Niagara Launcher -->
+            <intent-filter>
+                <action android:name="com.niagaralauncher.THEME" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
+  <!-- Smooth infinity loop — Meta's brand language -->
+  <path d="M40 96 C40 70 58 50 78 50 C98 50 108 70 124 96 C140 122 150 142 170 142 C190 142 208 122 208 96" 
+        fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"
+        transform="translate(-20,0)"/>
+  <path d="M172 96 C172 70 154 50 134 50 C114 50 104 70 88 96 C72 122 62 142 42 142 C22 142 4 122 4 96"
+        fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linecap="round"
+        transform="translate(-4,0)"/>
+</svg>
