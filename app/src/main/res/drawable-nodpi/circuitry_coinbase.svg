@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+<ellipse cx="216" cy="276" rx="80" ry="40"></ellipse>
+<ellipse cx="216" cy="256" rx="80" ry="40"></ellipse>
+<ellipse cx="216" cy="236" rx="80" ry="40"></ellipse>
+<line x1="136" y1="236" x2="136" y2="276"></line>
+<line x1="296" y1="236" x2="296" y2="276"></line>
+<ellipse cx="296" cy="236" rx="80" ry="40"></ellipse>
+<ellipse cx="296" cy="216" rx="80" ry="40"></ellipse>
+<ellipse cx="296" cy="196" rx="80" ry="40"></ellipse>
+<line x1="216" y1="196" x2="216" y2="236"></line>
+<line x1="376" y1="196" x2="376" y2="236"></line>
+<circle cx="216" cy="196" r="9" fill="#000" stroke="none"></circle>
+<circle cx="296" cy="156" r="9" fill="#000" stroke="none"></circle>
+<line x1="216" y1="316" x2="216" y2="356"></line>
+<circle cx="216" cy="364" r="9" fill="#000" stroke="none"></circle>
+<line x1="296" y1="156" x2="296" y2="116"></line>
+<circle cx="296" cy="108" r="9" fill="#000" stroke="none"></circle>
+</svg>
