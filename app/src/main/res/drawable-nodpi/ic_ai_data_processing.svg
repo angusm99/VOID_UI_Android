@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" fill="none" stroke="#000" stroke-width="14" stroke-linecap="round" stroke-linejoin="round">
+<line x1="116" y1="136" x2="396" y2="136"/>
+<line x1="396" y1="136" x2="296" y2="276"/>
+<line x1="296" y1="276" x2="296" y2="396"/>
+<line x1="296" y1="396" x2="216" y2="396"/>
+<line x1="216" y1="396" x2="216" y2="276"/>
+<line x1="216" y1="276" x2="116" y2="136"/>
+<circle cx="156" cy="136" r="9" fill="#000" stroke="none"/>
+<circle cx="216" cy="136" r="9" fill="#000" stroke="none"/>
+<circle cx="276" cy="136" r="9" fill="#000" stroke="none"/>
+<circle cx="336" cy="136" r="9" fill="#000" stroke="none"/>
+<circle cx="256" cy="396" r="9" fill="#000" stroke="none"/>
+<line x1="256" y1="396" x2="256" y2="436"/>
+<circle cx="256" cy="444" r="9" fill="#000" stroke="none"/>
+<line x1="116" y1="136" x2="76" y2="136"/>
+<circle cx="68" cy="136" r="9" fill="#000" stroke="none"/>
+<line x1="396" y1="136" x2="436" y2="136"/>
+<circle cx="444" cy="136" r="9" fill="#000" stroke="none"/>
+</svg>
