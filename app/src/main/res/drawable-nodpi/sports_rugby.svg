@@ -1,0 +1,1 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g stroke-width="12" stroke-linecap="round" stroke-linejoin="round"><path d="M106 256 C106 106 406 106 406 256 C406 406 106 406 106 256" stroke="ZONE_PRIMARY" fill="none"/><line x1="150" y1="256" x2="362" y2="256" stroke="ZONE_SECONDARY"/><line x1="256" y1="200" x2="256" y2="312" stroke="ZONE_ACCENT"/></g></svg>
