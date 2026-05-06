@@ -12,19 +12,19 @@
         android:translateX="18"
         android:translateY="18">
         <path
-            android:strokeColor="#FF000000"
+            android:strokeColor="#FFFFFFFF"
             android:strokeWidth="1.5"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M3 4c0-0.55 0.45-1 1-1h5c0.55 0 1 0.45 1 1v5c0 0.55-0.45 1-1 1h-5c-0.55 0-1-0.45-1-1z"/>
         <path
-            android:strokeColor="#FF000000"
+            android:strokeColor="#FFFFFFFF"
             android:strokeWidth="1.5"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M14 4c0-0.55 0.45-1 1-1h5c0.55 0 1 0.45 1 1v5c0 0.55-0.45 1-1 1h-5c-0.55 0-1-0.45-1-1z"/>
         <path
-            android:strokeColor="#FF000000"
+            android:strokeColor="#FFFFFFFF"
             android:strokeWidth="1.5"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
@@ -48,7 +48,7 @@
             android:strokeLineJoin="round"
             android:pathData="M5 16h3v3H5z"/>
         <path
-            android:strokeColor="#FF000000"
+            android:strokeColor="#FFFFFFFF"
             android:strokeWidth="1.5"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
