@@ -11,20 +11,20 @@ Minimalist AMOLED icon pack for Android. Pure black backgrounds, white monoline 
 | Package | `com.voidui.iconpack` |
 | Version | 1.2 |
 | Min SDK | 26 (Android 8.0) |
-| Target SDK | 34 |
-| Drawables | **856 SVGs** in `app/src/main/res/drawable/` |
+| Target SDK | 35 |
+| Drawables | **856 Android VectorDrawable XML files** in `app/src/main/res/drawable/` |
 | Master Library | **1,394 SVGs** across 9 series in ICON MASTER |
 | GitHub | [angusm99/VOID_UI_Android](https://github.com/angusm99/VOID_UI_Android) |
 | Figma | [VOID UI — Icon Pack](https://www.figma.com/design/4kszGYksUUIETAxL7mcXvM) |
+| Privacy Policy | [docs/privacy-policy.md](docs/privacy-policy.md) |
 
 ---
 
 ## Opening in Android Studio
 
 1. **File → Open** → select this `VOID_UI_Android` folder.
-2. When prompted about the Gradle wrapper, click **Update Gradle wrapper**. Android Studio will download the correct `gradle-wrapper.jar` automatically.
-3. Let Gradle sync complete. The first sync usually takes 1-2 minutes and requires internet access.
-4. Build from Android Studio once sync has completed.
+2. Let Gradle sync complete. The first sync usually takes 1-2 minutes and requires internet access.
+3. Build from Android Studio once sync has completed.
 
 > **Note:** If Android Studio does not set it automatically, update `local.properties` with your local Android SDK path.
 
@@ -50,10 +50,11 @@ You will need to create a keystore for the first signed build. Keep the keystore
 app/src/main/
   AndroidManifest.xml            Launcher intent filters
   java/com/voidui/iconpack/
-    MainActivity.kt              App entry screen
-    IconPackActivity.kt          Launcher entry point
+    MainActivity.java            App entry screen
+    IconPackActivity.java        Launcher entry point
   res/
-    drawable/                    856 SVG icons
+    drawable/                    856 VectorDrawable icon resources
+    drawable-nodpi/              733 VectorDrawable icon resources
     xml/appfilter.xml            App-to-icon mappings
     mipmap-*/                    Launcher icon PNGs
     layout/activity_main.xml
