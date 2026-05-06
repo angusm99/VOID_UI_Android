@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">VOID UI Icon Pack</string>
-    <string name="app_description">Minimalist AMOLED icon pack. Clean white strokes on pure black. 197 icons covering system apps, social, AI tools, developer utilities and more. Includes multiple design variants for popular AI apps — swap styles via your launcher\'s icon picker.</string>
-    <string name="icon_count">197</string>
-    <string name="pack_version">1.0</string>
+    <string name="app_description">Minimalist AMOLED icon pack for Android. Pure black backgrounds, white monoline strokes, premium themed packs, and launcher-ready app mappings.</string>
+    <string name="icon_count">856</string>
+    <string name="pack_version">1.2</string>
 </resources>
