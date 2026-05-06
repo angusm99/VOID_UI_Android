@@ -1,5 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
-  <!-- Copilot C-arc with inner arc suggesting depth -->
-  <path d="M148 52 A72 72 0 1 0 148 140" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
-  <path d="M132 72 A40 40 0 1 0 132 120" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
-</svg>

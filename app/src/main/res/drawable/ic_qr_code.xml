@@ -1,0 +1,24 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="512dp"
+    android:height="512dp"
+    android:viewportWidth="512"
+    android:viewportHeight="512">
+    <path
+        android:pathData="M96 104c0-4.42 3.58-8 8-8h104c4.42 0 8 3.58 8 8v104c0 4.42-3.58 8-8 8h-104c-4.42 0-8-3.58-8-8z"/>
+    <path
+        android:pathData="M112 116c0-2.21 1.79-4 4-4h80c2.21 0 4 1.79 4 4v80c0 2.21-1.79 4-4 4h-80c-2.21 0-4-1.79-4-4z"/>
+    <path
+        android:pathData="M136 136h40v40H136z"/>
+    <path
+        android:pathData="M296 104c0-4.42 3.58-8 8-8h104c4.42 0 8 3.58 8 8v104c0 4.42-3.58 8-8 8h-104c-4.42 0-8-3.58-8-8z"/>
+    <path
+        android:pathData="M312 116c0-2.21 1.79-4 4-4h80c2.21 0 4 1.79 4 4v80c0 2.21-1.79 4-4 4h-80c-2.21 0-4-1.79-4-4z"/>
+    <path
+        android:pathData="M336 136h40v40H336z"/>
+    <path
+        android:pathData="M96 304c0-4.42 3.58-8 8-8h104c4.42 0 8 3.58 8 8v104c0 4.42-3.58 8-8 8h-104c-4.42 0-8-3.58-8-8z"/>
+    <path
+        android:pathData="M112 316c0-2.21 1.79-4 4-4h80c2.21 0 4 1.79 4 4v80c0 2.21-1.79 4-4 4h-80c-2.21 0-4-1.79-4-4z"/>
+    <path
+        android:pathData="M136 336h40v40H136z"/>
+</vector>

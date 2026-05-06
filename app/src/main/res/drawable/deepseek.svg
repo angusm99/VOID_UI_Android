@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" width="192" height="192">
-  <!-- Whale/arc D shape — DeepSeek brand -->
-  <path d="M60 40 L60 152 Q60 152 96 152 Q148 148 154 96 Q160 44 96 40 Z" 
-        fill="none" stroke="#FFFFFF" stroke-width="12" stroke-linejoin="round"/>
-  <path d="M88 80 Q112 72 116 96 Q120 120 88 116" 
-        fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round"/>
-  <circle cx="96" cy="96" r="6" fill="#FFFFFF"/>
-</svg>

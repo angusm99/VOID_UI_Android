@@ -1,19 +1,7 @@
 // Top-level build file
-buildscript {
-    repositories {
-        google()
-        mavenCentral()
-    }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.3'
-    }
-}
-
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
+// Repositories are declared in settings.gradle (FAIL_ON_PROJECT_REPOS mode)
+plugins {
+    id 'com.android.application' version '8.7.3' apply false
 }
 
 task clean(type: Delete) {
