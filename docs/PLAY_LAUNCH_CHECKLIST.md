@@ -14,39 +14,58 @@ Ship VOID UI Icon Pack to Google Play as soon as possible with the lowest-risk r
 - Launch artifact: signed Android App Bundle (`.aab`)
 - Initial monetization recommendation: launch free first, add paid/IAP structure in a later update after the base app is live.
 
+## Build Status
+
+Local project path:
+
+`C:\Users\User\CLAUDE\VOID_UI_Android_Studio_Project\VOID_UI_Android`
+
+Current status as of May 6, 2026:
+
+- Debug APK build succeeded: `app/build/outputs/apk/debug/app-debug.apk`.
+- Release bundle build succeeded: `app/build/outputs/bundle/release/app-release.aab`.
+- The release AAB is unsigned and should be regenerated through Android Studio's signed bundle flow before upload.
+- `app/src/main/res/drawable/` contains 856 VectorDrawable XML resources.
+- `app/src/main/res/drawable-nodpi/` contains 733 VectorDrawable XML resources.
+- Raw SVG files were converted to Android VectorDrawable XML because Android does not compile raw `.svg` files from `res/drawable/`.
+
+Resolved blockers:
+
+- Real Gradle wrapper JAR restored.
+- Gradle wrapper bumped to Gradle 8.9 for Android Gradle Plugin 8.7.3.
+- `local.properties` fixed locally to point at the installed Android SDK.
+- `android.useAndroidX=true` added.
+- Kotlin activities replaced with Java activities to avoid Kotlin Gradle setup.
+- Android SDK Platform 35 is present locally.
+
 ## Why Target SDK 35
 
 Google Play requires new apps and updates submitted after August 31, 2025 to target Android 15 / API level 35 or higher.
 
 Source: https://developer.android.com/google/play/requirements/target-sdk
 
-## Build Blockers Found Locally
+## Immediate Next Steps
 
-Local project path:
+1. Generate the signed release AAB in Android Studio.
+2. Back up the keystore in at least two safe places.
+3. Create the app in Play Console.
+4. Add the privacy policy URL.
+5. Complete App content declarations.
+6. Upload the signed AAB to Closed testing.
+7. Invite testers immediately if the account is subject to the 12-tester / 14-day rule.
 
-`C:\Users\User\CLAUDE\VOID_UI_Android_Studio_Project\VOID_UI_Android`
+## Signing Checklist
 
-Current local blockers:
+Use Android Studio:
 
-1. `JAVA_HOME` is not set and `java` is not on PATH.
-2. Android Studio's bundled JDK exists at `C:\Program Files\Android\Android Studio\jbr`.
-3. `local.properties` still contains `sdk.dir=/path/to/your/Android/Sdk`.
-4. No normal Android SDK install was found under `C:\Users\User\AppData\Local\Android\Sdk`.
-5. `gradle/wrapper/gradle-wrapper.jar` is a 201-byte placeholder, so `gradlew.bat` fails with `ClassNotFoundException: org.gradle.wrapper.GradleWrapperMain`.
-6. The old Kotlin activity files were present but the Gradle project had no Kotlin plugin. The launch-prep branch replaces them with Java activities.
+1. **Build → Generate Signed Bundle / APK**.
+2. Select **Android App Bundle**.
+3. Create a new keystore if this is the first release.
+4. Save the keystore somewhere permanent and backed up.
+5. Build `release`.
+6. Upload the signed `.aab` to Play Console.
 
-## Android Studio Fix Path
-
-Do this once on the machine that will build the signed release:
-
-1. Open Android Studio.
-2. Install Android SDK Platform 35 and matching build tools from SDK Manager.
-3. Open the project folder.
-4. Let Android Studio repair/update the Gradle wrapper if prompted.
-5. Confirm `local.properties` points to the real SDK, usually `C:\Users\User\AppData\Local\Android\Sdk`.
-6. Sync Gradle.
-7. Build an unsigned debug APK first.
-8. Generate the signed Android App Bundle.
+Do not lose the keystore. Future updates to `com.voidui.iconpack` must be signed with the same app signing identity unless Google Play App Signing key upgrade flows are used.
 
 ## Play Console Requirements
 
@@ -69,15 +88,15 @@ Fast path:
 
 Complete these in Play Console:
 
-- Privacy policy URL.
-- Data safety form.
-- Ads declaration: likely `No`, unless ads are added.
+- Privacy policy URL: `https://github.com/angusm99/VOID_UI_Android/blob/master/docs/privacy-policy.md`
+- Data safety form: no user data collected or shared.
+- Ads declaration: `No`, unless ads are added later.
 - App access: no restricted login required.
-- Target audience/content: likely adults/general users, not child-directed.
+- Target audience/content: general users, not child-directed.
 - Content rating questionnaire.
 - News app declaration: `No`.
 - Government app declaration: `No`.
-- Financial features declaration: `No`, unless the app offers financial services.
+- Financial features declaration: `No`.
 
 Google requires Data safety declarations for apps published on testing or production tracks. Apps that collect no user data still need to complete the form and provide a privacy policy.
 
@@ -86,20 +105,6 @@ Sources:
 - https://support.google.com/googleplay/android-developer/answer/10787469
 - https://support.google.com/googleplay/android-developer/answer/9888076
 - https://support.google.com/googleplay/android-developer/answer/9859455
-
-## Privacy Policy Draft
-
-Use this as the basis for a public webpage, not a PDF.
-
-Title: Privacy Policy for VOID UI Icon Pack
-
-VOID UI Icon Pack does not collect, store, sell, or share personal user data. The app is an Android icon pack used by compatible launchers to apply custom icons. It does not require an account, does not include ads, does not use analytics, and does not transmit user data to the developer or third parties.
-
-The app may be distributed through Google Play, which may collect information according to Google's own policies. Those Google Play practices are controlled by Google, not by VOID UI Icon Pack.
-
-Privacy contact: [add developer contact email]
-
-Last updated: [add date]
 
 ## Store Listing Draft
 
@@ -117,7 +122,7 @@ VOID UI is a minimalist AMOLED icon pack for Android launchers. It uses pure bla
 
 Includes:
 
-- 856 launcher-ready SVG icons
+- 856 launcher-ready icons
 - Core VOID UI app icons
 - AI, social, productivity, media, finance, system, developer, travel, and lifestyle icons
 - Premium-style themed sets including Circuitry, Terminal, Sports Zones, Cricket Nations, and Xenocomm
@@ -136,7 +141,7 @@ VOID UI does not collect or share user data.
 
 ### Release Notes
 
-VOID UI 1.2 expands the pack to 856 icons, updates premium themed sets, adds Xenocomm icons, refreshes app metadata, and prepares the project for Google Play target SDK 35.
+VOID UI 1.2 expands the pack to 856 icons, updates premium themed sets, adds Xenocomm icons, refreshes app metadata, converts icon resources to Android VectorDrawable XML, and targets SDK 35 for Google Play.
 
 ## Asset Checklist
 
@@ -162,18 +167,3 @@ Recommended screenshots:
 ## Recommended First Release Scope
 
 For speed, do not add billing/IAP before first Play submission. Billing adds SDK setup, product setup, purchase restore flows, policy surface, and review risk. Launch the full pack first as free or paid. Add freemium/IAP gating only after the first release path is stable.
-
-## Codex Branch
-
-Launch-prep branch:
-
-`codex/play-launch-prep`
-
-Changes on this branch:
-
-- Target SDK raised to 35.
-- Version updated to 1.2 / versionCode 2.
-- App metadata updated from 197/164 icons to 856 icons.
-- Kotlin activities replaced with Java activities to avoid requiring Kotlin Gradle setup.
-- In-app privacy statement added.
-- README on master was already updated with the expanded icon library overview.
