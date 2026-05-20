@@ -27,6 +27,9 @@
             android:icon="@mipmap/ic_launcher"
             android:label="@string/app_name">
             <intent-filter>
+                <action android:name="org.adw.ActivityStarter.THEMES" />
+            </intent-filter>
+            <intent-filter>
                 <action android:name="com.novalauncher.THEME" />
             </intent-filter>
             <intent-filter>
