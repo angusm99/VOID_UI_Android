@@ -1,179 +1,271 @@
-# VOID UI — Android Icon Pack
+# VOID UI — Minimalist Android Icon Pack
 
-Minimalist AMOLED icon pack for Android. Pure black backgrounds, white monoline strokes. Clean, premium, editorial aesthetic.
+![Version](https://img.shields.io/badge/version-1.2-black)
+![Android](https://img.shields.io/badge/Android-8.0%2B-black)
+![Icons](https://img.shields.io/badge/icons-856-black)
+![License](https://img.shields.io/badge/license-MIT-black)
+![Privacy](https://img.shields.io/badge/data-zero%20collection-success)
+
+> **Pure black. Pure white. Pure design.**
+
+Minimalist AMOLED icon pack for Android with 856 icons across 6 themed packs. Designed for users who value premium minimalism, privacy, and battery efficiency.
 
 ---
 
-## Overview
+## Quick Facts
 
 | Field | Detail |
 |---|---|
-| Package | `com.voidui.iconpack` |
-| Version | 1.2 |
-| Min SDK | 26 (Android 8.0) |
-| Target SDK | 35 |
-| Drawables | **856 Android VectorDrawable XML files** in `app/src/main/res/drawable/` |
-| Master Library | **1,394 SVGs** across 9 series in ICON MASTER |
-| GitHub | [angusm99/VOID_UI_Android](https://github.com/angusm99/VOID_UI_Android) |
-| Figma | [VOID UI — Icon Pack](https://www.figma.com/design/4kszGYksUUIETAxL7mcXvM) |
-| Privacy Policy | [docs/privacy-policy.md](docs/privacy-policy.md) |
+| **Package** | `com.voidui.iconpack` |
+| **Version** | 1.2 (versionCode 2) |
+| **Min SDK** | 26 (Android 8.0+) |
+| **Target SDK** | 35 (Android 15) |
+| **Icons** | **856** Android VectorDrawable XMLs |
+| **Premium Packs** | 5 themed packs (568 icons) |
+| **Privacy** | Zero data collection ✅ |
+| **Permissions** | None required ✅ |
+| **Launchers** | 9 supported ✅ |
 
 ---
 
-## Opening in Android Studio
+## Get VOID UI
 
-1. **File → Open** → select this `VOID_UI_Android` folder.
-2. Let Gradle sync complete. The first sync usually takes 1-2 minutes and requires internet access.
-3. Build from Android Studio once sync has completed.
+📱 **[Install from Google Play Store](https://play.google.com/store/apps/details?id=com.voidui.iconpack)**
 
-> **Note:** If Android Studio does not set it automatically, update `local.properties` with your local Android SDK path.
+🛠️ **[View Source on GitHub](https://github.com/angusm99/VOID_UI_Android)**
+
+🎨 **[Design Files on Figma](https://www.figma.com/design/4kszGYksUUIETAxL7mcXvM)**
 
 ---
 
-## Building the APK / AAB
+## What's Included
 
-### Play Store build
+### Free Tier (288 Icons)
 
-Use **Build → Generate Signed Bundle / APK → Android App Bundle**.
+Comprehensive branded icons covering 14 categories:
 
-### Sideloading / testing build
+- 🤖 **AI & Models** (Claude, ChatGPT, Gemini, Grok, Copilot + more)
+- 💬 **Social & Messaging** (Instagram, TikTok, Twitter, Discord, etc.)
+- 📧 **Email & Inbox** (Gmail, Outlook + variants)
+- 💼 **Productivity** (Notion, Slack, Office, Google Workspace)
+- 🎵 **Media** (Spotify, YouTube, Netflix, Apple Music + more)
+- 💰 **Finance** (PayPal, Crypto, Stripe, Amazon + more)
+- 💻 **Tech** (AWS, GitHub, Docker, Kubernetes + more)
+- 🗺️ **Navigation** (System controls, gestures)
+- 📁 **Files** (Drive, Dropbox, cloud services)
+- 🚗 **Travel** (Maps, Uber, Airbnb, Waze + more)
+- 🏃 **Health** (Fitness, meditation, wellness)
+- 👥 **People** (Contacts, authentication, VPN, privacy)
+- ☀️ **Weather** (Climate, seasonal apps)
+- 🛠️ **Tools** (System utilities, miscellaneous)
 
-Use **Build → Generate Signed Bundle / APK → APK**.
+### Premium Packs (568 Icons — In-App Purchase)
 
-You will need to create a keystore for the first signed build. Keep the keystore file safe because every future update must be signed with the same key.
+5 themed icon packs with distinct aesthetics:
+
+#### 🌐 CIRCUITRY (94 icons)
+*Neon circuit board aesthetic*
+- Glowing matrix green endpoints
+- 14px round stroke, terminal dots at line endings
+- Default accent: `#00FF41`
+- Perfect for: Tech enthusiasts, developers
+
+#### 📺 TERMINAL (108 icons)
+*Retro amber CRT phosphor glow*
+- Amber `#FFB000` on black
+- 90° corners, no rounded line caps
+- Double CRT line effect with phosphor blur
+- Perfect for: Retro/cyberpunk fans, terminal lovers
+
+#### 👽 XENOCOMM (123 icons)
+*Alien bioluminescent sci-fi*
+- Cyan `#00FFE5` + violet `#9D4EDD`
+- Organic curves mixed with crystalline geometry
+- Perfect for: Sci-fi fans, futuristic aesthetic
+
+#### 🏏 CRICKET NATIONS (16 icons)
+*Geometric nation symbolism*
+- Abstract nation cricket representations
+- All major cricket-playing nations included
+- Perfect for: Cricket fans, regional users
+
+#### ⚽ SPORTS ZONES (30 icons)
+*Runtime colour-adaptive team icons*
+- Dynamic colour substitution via `ZONE_PRIMARY/SECONDARY/ACCENT`
+- 1,000+ possible team colour combinations
+- Perfect for: Sports fans, fantasy league users
+
+---
+
+## Features
+
+### 🖤 AMOLED-First Design
+Pure black backgrounds (`#000000`) optimize battery on AMOLED screens. White monoline strokes contrast crisply against black.
+
+### 🎯 Pixel-Perfect Grid
+All icons follow a consistent 108×108dp grid with 1:1 pixel alignment. Scales beautifully on any DPI density.
+
+### 🔐 Privacy-First
+- Zero data collection
+- No analytics or tracking
+- No third-party SDKs
+- No permissions required
+- No account needed
+
+### 🚀 Launcher Compatible
+
+| Launcher | Status |
+|----------|--------|
+| Nova Launcher | ✅ Native |
+| Niagara Launcher | ✅ Native |
+| Apex Launcher | ✅ Native |
+| Action Launcher | ✅ Native |
+| ADW Launcher | ✅ Native |
+| Lawnchair | ✅ Native |
+| Atom Launcher | ✅ Native |
+| Tesla Launcher | ✅ Native |
+| **Samsung One UI** | ✅ Native |
+
+### 🎨 Accent Colour Variants (Planned for v1.4)
+Each premium pack will support 5 accent variants:
+- **Cyber** (Neon blue)
+- **Neon** (Bright green)
+- **Ultra** (Vivid pink)
+- **Pulse** (Electric purple)
+- **Blaze** (Blazing orange)
+
+---
+
+## Documentation
+
+Full project documentation in `docs/`:
+
+| File | Purpose |
+|------|---------|
+| [ICON_INVENTORY.md](docs/ICON_INVENTORY.md) | All 856 icons categorized by tier |
+| [PLAY_STORE_LISTING.md](docs/PLAY_STORE_LISTING.md) | Play Store copy & assets |
+| [PLAY_CONSOLE_SETUP.md](docs/PLAY_CONSOLE_SETUP.md) | Console upload guide |
+| [DATA_SAFETY_FORM.md](docs/DATA_SAFETY_FORM.md) | Pre-filled questionnaire |
+| [PRIVACY_POLICY_HOSTING.md](docs/PRIVACY_POLICY_HOSTING.md) | GitHub Pages setup |
+| [KEYSTORE_BACKUP.md](docs/KEYSTORE_BACKUP.md) | Critical backup procedures |
+| [POST_LAUNCH_PLAN.md](docs/POST_LAUNCH_PLAN.md) | 90-day post-launch plan |
+| [LAUNCH_MARKETING.md](docs/LAUNCH_MARKETING.md) | Launch day templates |
+| [IAP_IMPLEMENTATION_GUIDE.md](docs/IAP_IMPLEMENTATION_GUIDE.md) | Premium packs setup |
+| [V1_3_ROADMAP.md](docs/V1_3_ROADMAP.md) | Future development plan |
+| [FAQ.md](docs/FAQ.md) | Frequently asked questions |
+| [privacy-policy.md](docs/privacy-policy.md) | Privacy policy (public URL) |
+
+---
+
+## Building from Source
+
+### Prerequisites
+- Android Studio (latest stable)
+- JDK 17+
+- Android SDK 35
+- Gradle 8.9
+
+### Setup
+
+1. Clone this repository:
+```bash
+git clone https://github.com/angusm99/VOID_UI_Android.git
+cd VOID_UI_Android
+```
+
+2. Open in Android Studio:
+   - File → Open → Select the `VOID_UI_Android` folder
+   - Wait for Gradle sync to complete
+
+3. Build:
+```bash
+# Debug APK (sideload testing)
+./gradlew assembleDebug
+
+# Release AAB (Play Store)
+./gradlew bundleRelease
+```
+
+### Signing
+For Play Store submission, you need a release keystore:
+- **Build → Generate Signed Bundle / APK**
+- Follow the wizard to create a new keystore
+- **CRITICAL:** Backup the keystore in 2 safe locations
 
 ---
 
 ## Project Structure
 
-```text
-app/src/main/
-  AndroidManifest.xml            Launcher intent filters
-  java/com/voidui/iconpack/
-    MainActivity.java            App entry screen
-    IconPackActivity.java        Launcher entry point
-  res/
-    drawable/                    856 VectorDrawable icon resources
-    drawable-nodpi/              733 VectorDrawable icon resources
-    xml/appfilter.xml            App-to-icon mappings
-    mipmap-*/                    Launcher icon PNGs
-    layout/activity_main.xml
-    values/strings.xml
-    values/styles.xml
+```
+VOID_UI_Android/
+├── app/
+│   ├── src/main/
+│   │   ├── AndroidManifest.xml         Launcher intent filters
+│   │   ├── java/com/voidui/iconpack/
+│   │   │   ├── MainActivity.java       App entry
+│   │   │   └── IconPackActivity.java   Launcher entry point
+│   │   └── res/
+│   │       ├── drawable/              856 VectorDrawable XMLs
+│   │       ├── drawable-nodpi/        733 additional VectorDrawables
+│   │       ├── xml/appfilter.xml      Launcher icon mappings (200+)
+│   │       ├── mipmap-*/              Launcher icon PNGs
+│   │       └── values/                Strings, styles, colors
+│   └── build.gradle                   Build configuration
+├── docs/                              Comprehensive documentation
+├── gradle/wrapper/                    Gradle 8.9 wrapper
+├── build.gradle                       Root build config
+└── settings.gradle                    Module configuration
 ```
 
 ---
 
-## ICON MASTER Structure
+## Contributing
 
-| Folder | Series | Count | Prefix | Tier |
-|---|---|---:|---|---|
-| `01_APP_ICONS/` | Framed + bare app icons | 188 | `ic_` | Free |
-| `02_VOID_UI/` | Monoline system icons, AI brands, phone variants | 195 | various | Free |
-| `03_MANUS_CIRCUIT/` | Neon circuit line icons | 210 | numbered | Premium |
-| `04_SYSTEM_UICONS/` | General system/UI icons | 430 | names | Internal |
-| `05_CIRCUITRY/` | PCB circuit-board aesthetic | 94 | `circuitry_` | Premium |
-| `06_TERMINAL/` | CRT amber terminal style | 108 | `terminal_` | Premium |
-| `07_CRICKET_NATIONS/` | Abstract cricket nation symbols | 16 | `nation_` | Premium add-on |
-| `08_SPORTS_ZONES/` | Runtime colour-zone sports icons | 30 | `sports_` | Premium add-on |
-| `09_XENOCOMM/` | Alien worlds comms icons | 123 | `xeno_` | Premium |
+Contributions welcome! See our [Issues page](https://github.com/angusm99/VOID_UI_Android/issues):
 
----
+- 🐛 **[Report a bug](https://github.com/angusm99/VOID_UI_Android/issues/new?template=bug_report.md)**
+- 💡 **[Request a feature](https://github.com/angusm99/VOID_UI_Android/issues/new?template=feature_request.md)**
+- 🎨 **[Request an icon](https://github.com/angusm99/VOID_UI_Android/issues/new?template=missing_icon.md)**
 
-## Android Drawable Contents
+### Code Contributions
 
-| Prefix | Pack | Count |
-|---|---|---:|
-| `ic_` | Core VOID UI app icons | 94 |
-| `circuitry_` | Circuitry premium pack | 94 |
-| `terminal_` | Terminal CRT pack | 108 |
-| `nation_` | Cricket Nations add-on | 16 |
-| `sports_` | Sports Zones add-on | 30 |
-| `xeno_` | Xenocomm premium pack | 123 |
-| various | Variant icons, including Claude and ChatGPT versions | ~391 |
-| **Total** |  | **856** |
+1. Fork this repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
 ---
 
-## Freemium Model
+## License
 
-| Tier | Content | Price |
-|---|---|---|
-| Free | Core VOID UI app icons | Free |
-| Premium | Circuitry pack | IAP |
-| Premium | Terminal pack | IAP |
-| Premium | Sports Zones | IAP |
-| Premium | Cricket Nations | IAP |
-| Premium | Xenocomm pack | IAP |
+MIT License — see [LICENSE](LICENSE) file for details.
 
-Accent colour variants are planned at pack level: Cyber, Neon, Ultra, Pulse, and Blaze.
+Icons (SVG files in `ICON MASTER/`) are Creative Commons CC-BY 4.0.
 
 ---
 
-## Premium Pack Design Rules
+## Acknowledgments
 
-### Circuitry
-
-- Stroke: `strokeWidth="14"`, `strokeLinecap="round"`.
-- Terminal dots: filled circles with `r="9"` at line endpoints.
-- Default accent: matrix green `#00FF41`.
-
-### Terminal
-
-- Amber `#FFB000` on black.
-- 90-degree corners with no rounded line caps.
-- Double CRT line effect: two parallel strokes, with the second at 40% opacity.
-- Phosphor glow via SVG `<filter>` with `feGaussianBlur stdDeviation="3"`.
-
-### Sports Zones
-
-Runtime colour placeholders in SVG paths:
-
-| Placeholder | Usage |
-|---|---|
-| `ZONE_PRIMARY` | Team primary colour |
-| `ZONE_SECONDARY` | Team secondary colour |
-| `ZONE_ACCENT` | Highlight or trim colour |
-
-### Xenocomm
-
-- Bioluminescent cyan `#00FFE5` and violet `#9D4EDD`.
-- Organic flowing curves mixed with crystalline geometry.
+- **svg2vectordrawable** — for SVG → VectorDrawable conversion
+- **Material Icons** — design inspiration for some categories
+- **r/androidthemes** community — for invaluable feedback
+- **Beta testers** — for testing early versions
 
 ---
 
-## Figma
+## Contact
 
-| Page | Contents |
-|---|---|
-| Page 1 | 291 VOID UI core icons grouped by category on black backgrounds |
-| Manus — Circuit Line Icons | 200 circuit line icons |
+**Maker:** Angus M.  
+**Email:** angusm99@gmail.com  
+**GitHub:** [@angusm99](https://github.com/angusm99)  
+**Location:** Cape Town, South Africa
 
-### Page 1 Categories
-
-| Category | Count |
-|---|---:|
-| AI & Models | ~45 |
-| Social & Messaging | ~25 |
-| Productivity & Work | ~35 |
-| Media & Entertainment | ~22 |
-| Finance & Commerce | ~19 |
-| Tech & Connectivity | ~20 |
-| Navigation & UI | ~45 |
-| Files & Storage | ~8 |
-| Maps & Travel | ~10 |
-| Health & Lifestyle | ~12 |
-| People & Security | ~16 |
-| Uncategorised | ~12 |
+For questions, suggestions, or just to say hi — drop me a message!
 
 ---
 
-## Colour Variants
-
-| Pack | Package | Colour |
-|---|---|---|
-| Cyan | `com.voidui.iconpack.cyan` | `#00FFFF` |
-| Green | `com.voidui.iconpack.green` | `#39FF14` |
-| Purple | `com.voidui.iconpack.purple` | `#BF00FF` |
-| Pink | `com.voidui.iconpack.pink` | `#FF007F` |
-| Amber | `com.voidui.iconpack.amber` | `#FF9500` |
+<p align="center">
+  <strong>VOID UI</strong><br>
+  Pure black. Pure white. Pure design. 🖤
+</p>
