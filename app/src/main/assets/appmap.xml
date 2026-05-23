@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-    <!-- VOID UI Icon Pack: real app auto-apply mappings. -->
-    <!-- Manual/icon-picker variants are exposed through res/xml/drawable.xml. -->
-
     <item component="ComponentInfo{com.android.dialer/com.android.dialer.main.impl.MainActivity}" drawable="phone_portrait"/>
     <item component="ComponentInfo{com.google.android.dialer/com.google.android.dialer.extensions.GoogleDialtactsActivity}" drawable="phone_portrait"/>
     <item component="ComponentInfo{com.android.mms/com.android.mms.ui.ConversationList}" drawable="speech_bubble"/>
@@ -163,5 +160,4 @@
     <item component="ComponentInfo{com.whatsapp/com.whatsapp.Main}" drawable="ic_whatsapp"/>
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.SpotifyMainActivity}" drawable="ic_spotify"/>
     <item component="ComponentInfo{com.instagram.android/com.instagram.android.activity.MainTabActivity}" drawable="ic_instagram"/>
-
 </resources>
