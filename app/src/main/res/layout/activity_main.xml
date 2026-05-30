@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="VOID UI"
+        android:text="@string/title_void"
         android:textColor="#FFFFFF"
         android:textSize="42sp"
         android:textStyle="bold"
@@ -21,7 +21,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="ICON PACK"
+        android:text="@string/title_icon_pack"
         android:textColor="#555555"
         android:textSize="14sp"
         android:letterSpacing="0.4"
@@ -34,6 +34,7 @@
         android:layout_marginBottom="48dp"/>
 
     <TextView
+        android:id="@+id/icons_count_textview"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="856 icons"
@@ -44,7 +45,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Apply in Nova, Niagara, Apex, Action or Lawnchair launcher"
+        android:text="@string/apply_hint"
         android:textColor="#666666"
         android:textSize="13sp"
         android:gravity="center"
@@ -54,7 +55,7 @@
         android:id="@+id/launcher_hint"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Open your launcher settings\nLook for 'Icon pack' or 'Themes'\nSelect VOID UI"
+        android:text="@string/launcher_instructions"
         android:textColor="#444444"
         android:textSize="13sp"
         android:lineSpacingMultiplier="1.6"
@@ -64,7 +65,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Privacy: VOID UI does not collect or share user data."
+        android:text="@string/privacy_policy"
         android:textColor="#444444"
         android:textSize="12sp"
         android:gravity="center"/>

@@ -31,13 +31,13 @@
     <item component="ComponentInfo{com.google.android.apps.docs.editors.docs/com.google.android.apps.docs.app.activity.DocumentHomeActivity}" drawable="document"/>
     <item component="ComponentInfo{com.google.android.apps.docs.editors.sheets/com.google.android.apps.docs.app.activity.SpreadsheetHomeActivity}" drawable="table"/>
     <item component="ComponentInfo{com.google.android.apps.magazines/com.google.apps.dots.android.app.activity.CurrentsActivity}" drawable="newspaper"/>
-    <item component="ComponentInfo{com.whatsapp/com.whatsapp.HomeActivity}" drawable="whatsapp_v2"/>
+    <item component="ComponentInfo{com.whatsapp/com.whatsapp.HomeActivity}" drawable="ic_whatsapp"/>
     <item component="ComponentInfo{com.instagram.android/com.instagram.mainactivity.MainActivity}" drawable="instagram_v1"/>
     <item component="ComponentInfo{com.pinterest/com.pinterest.activity.HomePageActivity}" drawable="bookmark"/>
     <item component="ComponentInfo{com.reddit.frontpage/com.reddit.frontpage.MainActivity}" drawable="speech_bubble"/>
     <item component="ComponentInfo{com.discord/com.discord.app.AppActivity$Main}" drawable="message"/>
     <item component="ComponentInfo{com.snapchat.android/com.snap.mushroom.MainActivity}" drawable="snapchat_v1"/>
-    <item component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}" drawable="grok_v5_twitter"/>
+    <item component="ComponentInfo{com.twitter.android/com.twitter.android.StartActivity}" drawable="ic_x"/>
     <item component="ComponentInfo{com.zhiliaoapp.musically/com.ss.android.ugc.aweme.main.MainActivity}" drawable="play_button"/>
     <item component="ComponentInfo{com.netflix.mediaclient/com.netflix.mediaclient.ui.launch.UIWebViewActivity}" drawable="tv_mode"/>
     <item component="ComponentInfo{com.spotify.music/com.spotify.music.MainActivity}" drawable="spotify_v1"/>
@@ -218,7 +218,6 @@
     <item component="ComponentInfo{org.telegram.messenger/org.telegram.messenger.DefaultIcon}" drawable="ic_telegram"/>
     <item component="ComponentInfo{com.tplink.iot/.view.welcome.StartupActivity}" drawable="ic_home"/>
     <item component="ComponentInfo{com.sec.android.app.voicenote/.main.VNMainActivity}" drawable="ic_recorder"/>
-    <item component="ComponentInfo{com.whatsapp/.Main}" drawable="ic_whatsapp"/>
     <item component="ComponentInfo{com.sec.android.app.clockpackage/.ClockPackage}" drawable="alarm_clock"/>
     <item component="ComponentInfo{com.spotify.music/.MainActivity}" drawable="spotify_v1"/>
     <item component="ComponentInfo{com.openai.chatgpt/.MainActivity}" drawable="chatgpt_v4"/>
@@ -352,7 +351,6 @@
     <item component="ComponentInfo{com.shapeshift.droid_shapeshift/.MainActivity}" drawable="ic_wallet"/>
     <item component="ComponentInfo{com.sleepmonitor.aio/.activity.SplashActivity}" drawable="ic_sleep"/>
     <item component="ComponentInfo{com.substack.app/.ui.AppActivity}" drawable="ic_blog_post"/>
-    <item component="ComponentInfo{com.twitter.android/.StartActivity}" drawable="ic_x"/>
     <item component="ComponentInfo{com.vod.watchlist.mobile/com.cv.mobile.app.SplashStub}" drawable="ic_film_movie"/>
     <item component="ComponentInfo{com.voidui.iconpack/.MainActivity}" drawable="ic_palette_art"/>
     <item component="ComponentInfo{com.wakdev.nfctasks/.views.MainActivity}" drawable="ic_nfc"/>

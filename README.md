@@ -1,6 +1,6 @@
 # VOID UI — Minimalist Android Icon Pack
 
-![Version](https://img.shields.io/badge/version-1.2-black)
+![Version](https://img.shields.io/badge/version-1.8-black)
 ![Android](https://img.shields.io/badge/Android-8.0%2B-black)
 ![Icons](https://img.shields.io/badge/icons-856-black)
 ![License](https://img.shields.io/badge/license-MIT-black)
@@ -17,7 +17,7 @@ Minimalist AMOLED icon pack for Android with 856 icons across 6 themed packs. De
 | Field | Detail |
 |---|---|
 | **Package** | `com.voidui.iconpack` |
-| **Version** | 1.2 (versionCode 2) |
+| **Version** | 1.8 (versionCode 8) |
 | **Min SDK** | 26 (Android 8.0+) |
 | **Target SDK** | 35 (Android 15) |
 | **Icons** | **856** Android VectorDrawable XMLs |

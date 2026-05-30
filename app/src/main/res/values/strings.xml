@@ -4,4 +4,12 @@
     <string name="app_description">Minimalist AMOLED icon pack for Android. Pure black backgrounds, white monoline strokes, premium themed packs, and launcher-ready app mappings.</string>
     <string name="icon_count">856</string>
     <string name="pack_version">1.8</string>
+
+    <!-- MainActivity strings -->
+    <string name="title_void">VOID UI</string>
+    <string name="title_icon_pack">ICON PACK</string>
+    <string name="icons_count_format">%1$s icons</string>
+    <string name="apply_hint">Apply in Nova, Niagara, Apex, Action or Lawnchair launcher</string>
+    <string name="launcher_instructions">Open your launcher settings\nLook for \'Icon pack\' or \'Themes\'\nSelect VOID UI</string>
+    <string name="privacy_policy">Privacy: VOID UI does not collect or share user data.</string>
 </resources>

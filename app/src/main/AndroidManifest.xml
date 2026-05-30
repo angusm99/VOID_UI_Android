@@ -12,8 +12,7 @@
         <!-- Main launcher activity -->
         <activity
             android:name=".MainActivity"
-            android:exported="true"
-            android:label="@string/app_name">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,7 +24,10 @@
             android:name=".IconPackActivity"
             android:exported="true"
             android:icon="@mipmap/ic_launcher"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoDisplay"
+            android:excludeFromRecents="true"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="org.adw.ActivityStarter.THEMES" />
             </intent-filter>
@@ -45,11 +47,6 @@
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.teslacoilsw.launcher.THEME" />
-            </intent-filter>
-            <!-- Apex Launcher -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="com.anddoes.launcher.THEME" />
             </intent-filter>
             <!-- Action Launcher -->
             <intent-filter>
