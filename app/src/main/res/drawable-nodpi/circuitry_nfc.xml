@@ -4,7 +4,51 @@
     android:viewportWidth="512"
     android:viewportHeight="512">
     <path
-        android:pathData="M176 96L336 96 376 136 376 416 136 416 136 96Z"/>
+        android:pathData="M176 96 L336 96 L376 136 L376 416 L136 416 L136 96 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
     <path
-        android:pathData="M176 244c0-4.42 3.58-8 8-8h144c4.42 0 8 3.58 8 8v104c0 4.42-3.58 8-8 8h-144c-4.42 0-8-3.58-8-8z"/>
+        android:pathData="M184 236 H328 A8 8 0 0 1 336 244 V348 A8 8 0 0 1 328 356 H184 A8 8 0 0 1 176 348 V244 A8 8 0 0 1 184 236 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
+    <path
+        android:pathData="M256 236 L256 356"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
+    <path
+        android:pathData="M176 296 L336 296"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
+    <path
+        android:pathData="M207 266 A9 9 0 1 0 225 266 A9 9 0 1 0 207 266 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M287 266 A9 9 0 1 0 305 266 A9 9 0 1 0 287 266 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M207 326 A9 9 0 1 0 225 326 A9 9 0 1 0 207 326 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M287 326 A9 9 0 1 0 305 326 A9 9 0 1 0 287 326 Z"
+        android:fillColor="#FF00FF41"
+        />
 </vector>

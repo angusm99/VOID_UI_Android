@@ -3,6 +3,19 @@
     android:height="512dp"
     android:viewportWidth="512"
     android:viewportHeight="512">
-    <group>
-    </group>
+    <path
+        android:strokeColor="#FF00FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M100,400 L200,300 L300,400"/>
+    <path
+        android:strokeColor="#FFFF007F"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M100,400 L400,400"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M190,350 A10,10 0,1 0 210,350 A10,10 0,1 0 190,350"/>
 </vector>

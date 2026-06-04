@@ -3,4 +3,36 @@
     android:height="512dp"
     android:viewportWidth="512"
     android:viewportHeight="512">
+    <path
+        android:pathData="M116 256 A140 140 0 1 0 396 256 A140 140 0 1 0 116 256 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
+    <path
+        android:pathData="M206 176 L206 336 L346 256 Z"
+        android:fillColor="@android:color/transparent"
+        android:strokeColor="#FF00FF41"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        />
+    <path
+        android:pathData="M247 116 A9 9 0 1 0 265 116 A9 9 0 1 0 247 116 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M247 396 A9 9 0 1 0 265 396 A9 9 0 1 0 247 396 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M107 256 A9 9 0 1 0 125 256 A9 9 0 1 0 107 256 Z"
+        android:fillColor="#FF00FF41"
+        />
+    <path
+        android:pathData="M387 256 A9 9 0 1 0 405 256 A9 9 0 1 0 387 256 Z"
+        android:fillColor="#FF00FF41"
+        />
 </vector>

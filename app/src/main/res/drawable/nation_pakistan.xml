@@ -8,5 +8,8 @@
         android:strokeWidth="14"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M350 256A100 100 0 1 1 250 156"/>
+        android:pathData="M350 256 A100 100 0 1 1 250 156"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M335,150 A15,15 0,1 0 365,150 A15,15 0,1 0 335,150"/>
 </vector>

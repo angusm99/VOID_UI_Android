@@ -3,6 +3,23 @@
     android:height="512dp"
     android:viewportWidth="512"
     android:viewportHeight="512">
-    <group>
-    </group>
+    <path
+        android:strokeColor="#FF00FFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M106,256 A150,150 0,1 0 406,256 A150,150 0,1 0 106,256"/>
+    <path
+        android:strokeColor="#FFFF007F"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M156,256 A100,100 0,1 0 356,256 A100,100 0,1 0 156,256"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M206,256 A50,50 0,1 0 306,256 A50,50 0,1 0 206,256"/>
 </vector>

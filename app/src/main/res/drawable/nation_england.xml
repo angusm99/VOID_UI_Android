@@ -8,5 +8,5 @@
         android:strokeWidth="14"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M150 150L350 150M150 250L350 250M150 350L350 350"/>
+        android:pathData="M150 150 L350 150 M150 250 L350 250 M150 350 L350 350"/>
 </vector>

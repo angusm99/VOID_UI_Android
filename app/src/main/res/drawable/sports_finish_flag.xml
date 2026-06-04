@@ -4,15 +4,21 @@
     android:viewportWidth="512"
     android:viewportHeight="512">
     <path
-        android:strokeColor="#FF000000"
+        android:strokeColor="#FF00FFFF"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M150 100L150 450"/>
+        android:pathData="M150 100 L150 450"/>
     <path
-        android:strokeColor="#FF000000"
+        android:strokeColor="#FFFF007F"
         android:strokeWidth="12"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M150 100h200v120H150z"/>
+        android:pathData="M150,100 H350 V220 H150 Z"/>
+    <path
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="12"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M150,160 L350,160"/>
 </vector>
