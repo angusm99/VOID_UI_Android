@@ -2,6 +2,8 @@ package com.voidui.iconpack;
 
 import android.content.res.Resources;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
@@ -9,13 +11,16 @@ import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.FrameLayout;
 import android.widget.GridLayout;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
+import android.widget.SeekBar;
 import android.widget.TextView;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.ArrayList;
@@ -31,19 +36,31 @@ public class MainActivity extends AppCompatActivity {
     private static final int MUTED = Color.rgb(150, 150, 150);
     private static final int FAINT = Color.rgb(64, 64, 64);
 
+    private static final int[] PRESET_COLOURS = {
+        WHITE,
+        Color.parseColor("#00BFFF"),  // neon blue
+        Color.parseColor("#39FF14"),  // neon green
+        Color.parseColor("#FF9500"),  // amber
+        Color.parseColor("#FFE600"),  // yellow
+        Color.parseColor("#FF007F"),  // neon pink
+    };
+
     private final List<IconItem> icons = new ArrayList<>();
     private final List<TextView> categoryButtons = new ArrayList<>();
     private LinearLayout categoryRow;
+    private LinearLayout tintRow;
     private GridLayout iconGrid;
     private TextView countView;
     private String activeCategory = ALL;
     private String query = "";
+    private int currentTint = WHITE;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         loadIcons();
         setContentView(buildContent());
+        renderTintChips();
         renderCategories();
         renderIcons();
     }
@@ -117,9 +134,22 @@ public class MainActivity extends AppCompatActivity {
         );
         root.addView(search, searchParams);
 
+        // Colour tint row
+        HorizontalScrollView tintScroll = new HorizontalScrollView(this);
+        tintScroll.setHorizontalScrollBarEnabled(false);
+        tintScroll.setPadding(0, dp(14), 0, dp(4));
+        tintRow = new LinearLayout(this);
+        tintRow.setOrientation(LinearLayout.HORIZONTAL);
+        tintRow.setGravity(Gravity.CENTER_VERTICAL);
+        tintScroll.addView(tintRow);
+        root.addView(tintScroll, new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT,
+                dp(64)
+        ));
+
         HorizontalScrollView categoryScroll = new HorizontalScrollView(this);
         categoryScroll.setHorizontalScrollBarEnabled(false);
-        categoryScroll.setPadding(0, dp(12), 0, dp(10));
+        categoryScroll.setPadding(0, dp(4), 0, dp(10));
         categoryRow = new LinearLayout(this);
         categoryRow.setOrientation(LinearLayout.HORIZONTAL);
         categoryScroll.addView(categoryRow);
@@ -141,6 +171,161 @@ public class MainActivity extends AppCompatActivity {
         ));
 
         return root;
+    }
+
+    private void renderTintChips() {
+        tintRow.removeAllViews();
+
+        for (int color : PRESET_COLOURS) {
+            final int c = color;
+            boolean isActive = currentTint == color;
+
+            LinearLayout frame = new LinearLayout(this);
+            frame.setGravity(Gravity.CENTER);
+
+            GradientDrawable outerBg = new GradientDrawable();
+            outerBg.setShape(GradientDrawable.OVAL);
+            outerBg.setColor(isActive ? WHITE : Color.TRANSPARENT);
+            frame.setBackground(outerBg);
+
+            GradientDrawable innerBg = new GradientDrawable();
+            innerBg.setShape(GradientDrawable.OVAL);
+            innerBg.setColor(color);
+            if (color == WHITE) {
+                // faint border so the white chip is visible on black background
+                innerBg.setStroke(dp(1), Color.rgb(80, 80, 80));
+            }
+
+            View inner = new View(this);
+            inner.setBackground(innerBg);
+            int innerSize = isActive ? dp(26) : dp(34);
+            frame.addView(inner, new LinearLayout.LayoutParams(innerSize, innerSize));
+
+            frame.setOnClickListener(v -> {
+                currentTint = c;
+                renderTintChips();
+                renderIcons();
+            });
+
+            LinearLayout.LayoutParams fp = new LinearLayout.LayoutParams(dp(42), dp(42));
+            fp.setMargins(0, 0, dp(10), 0);
+            tintRow.addView(frame, fp);
+        }
+
+        // Custom colour picker chip
+        boolean customActive = !isPresetColour(currentTint);
+
+        LinearLayout customFrame = new LinearLayout(this);
+        customFrame.setGravity(Gravity.CENTER);
+
+        GradientDrawable customOuter = new GradientDrawable();
+        customOuter.setShape(GradientDrawable.OVAL);
+        customOuter.setColor(customActive ? WHITE : Color.TRANSPARENT);
+        customFrame.setBackground(customOuter);
+
+        FrameLayout customInner = new FrameLayout(this);
+        GradientDrawable customInnerBg = new GradientDrawable();
+        customInnerBg.setShape(GradientDrawable.OVAL);
+        customInnerBg.setColor(customActive ? currentTint : Color.rgb(38, 38, 38));
+        if (!customActive) {
+            customInnerBg.setStroke(dp(1), Color.rgb(80, 80, 80));
+        }
+        customInner.setBackground(customInnerBg);
+
+        TextView plusLabel = new TextView(this);
+        plusLabel.setText("+");
+        plusLabel.setTextColor(customActive ? contrastColour(currentTint) : MUTED);
+        plusLabel.setTextSize(18);
+        plusLabel.setGravity(Gravity.CENTER);
+        plusLabel.setTypeface(plusLabel.getTypeface(), android.graphics.Typeface.BOLD);
+        customInner.addView(plusLabel, new FrameLayout.LayoutParams(
+                FrameLayout.LayoutParams.MATCH_PARENT,
+                FrameLayout.LayoutParams.MATCH_PARENT
+        ));
+
+        int customInnerSize = customActive ? dp(26) : dp(34);
+        customFrame.addView(customInner, new LinearLayout.LayoutParams(customInnerSize, customInnerSize));
+
+        customFrame.setOnClickListener(v -> showColourPicker());
+        tintRow.addView(customFrame, new LinearLayout.LayoutParams(dp(42), dp(42)));
+    }
+
+    private boolean isPresetColour(int color) {
+        for (int preset : PRESET_COLOURS) {
+            if (preset == color) return true;
+        }
+        return false;
+    }
+
+    private int contrastColour(int bg) {
+        double lum = 0.299 * Color.red(bg) + 0.587 * Color.green(bg) + 0.114 * Color.blue(bg);
+        return lum > 128 ? Color.BLACK : Color.WHITE;
+    }
+
+    private void showColourPicker() {
+        int startColour = isPresetColour(currentTint) ? WHITE : currentTint;
+
+        LinearLayout layout = new LinearLayout(this);
+        layout.setOrientation(LinearLayout.VERTICAL);
+        layout.setPadding(dp(24), dp(20), dp(24), dp(8));
+
+        GradientDrawable swatchBg = new GradientDrawable();
+        swatchBg.setShape(GradientDrawable.RECTANGLE);
+        swatchBg.setCornerRadius(dp(8));
+        swatchBg.setColor(startColour);
+
+        View swatch = new View(this);
+        swatch.setBackground(swatchBg);
+        layout.addView(swatch, new LinearLayout.LayoutParams(
+                ViewGroup.LayoutParams.MATCH_PARENT, dp(52)
+        ));
+
+        int[] rgb = {Color.red(startColour), Color.green(startColour), Color.blue(startColour)};
+        String[] channels = {"R", "G", "B"};
+
+        for (int i = 0; i < 3; i++) {
+            final int idx = i;
+
+            View spacer = new View(this);
+            layout.addView(spacer, new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT, dp(12)
+            ));
+
+            TextView lbl = new TextView(this);
+            lbl.setText(channels[i]);
+            lbl.setTextColor(MUTED);
+            lbl.setTextSize(12);
+            lbl.setLetterSpacing(0.08f);
+            layout.addView(lbl);
+
+            SeekBar bar = new SeekBar(this);
+            bar.setMax(255);
+            bar.setProgress(rgb[i]);
+            bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+                @Override
+                public void onProgressChanged(SeekBar sb, int progress, boolean fromUser) {
+                    rgb[idx] = progress;
+                    swatchBg.setColor(Color.rgb(rgb[0], rgb[1], rgb[2]));
+                }
+                @Override public void onStartTrackingTouch(SeekBar sb) {}
+                @Override public void onStopTrackingTouch(SeekBar sb) {}
+            });
+            layout.addView(bar, new LinearLayout.LayoutParams(
+                    ViewGroup.LayoutParams.MATCH_PARENT,
+                    ViewGroup.LayoutParams.WRAP_CONTENT
+            ));
+        }
+
+        new AlertDialog.Builder(this)
+                .setTitle("Custom colour")
+                .setView(layout)
+                .setPositiveButton("Apply", (d, w) -> {
+                    currentTint = Color.rgb(rgb[0], rgb[1], rgb[2]);
+                    renderTintChips();
+                    renderIcons();
+                })
+                .setNegativeButton("Cancel", null)
+                .show();
     }
 
     private void renderCategories() {
@@ -205,6 +390,7 @@ public class MainActivity extends AppCompatActivity {
         image.setImageResource(icon.resourceId);
         image.setAdjustViewBounds(true);
         image.setScaleType(ImageView.ScaleType.FIT_CENTER);
+        image.setColorFilter(currentTint, PorterDuff.Mode.SRC_IN);
         tile.addView(image, new LinearLayout.LayoutParams(dp(54), dp(54)));
 
         TextView label = new TextView(this);
