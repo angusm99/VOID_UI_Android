@@ -46,6 +46,10 @@ public class MainActivity extends AppCompatActivity {
         Color.parseColor("#FF007F"),  // neon pink
     };
 
+    private static final String[] PRESET_NAMES = {
+        "White", "Neon blue", "Neon green", "Amber", "Yellow", "Neon pink",
+    };
+
     private static final String PREFS = "void_ui_prefs";
     private static final String PREF_TINT = "icon_tint";
 
@@ -201,9 +205,9 @@ public class MainActivity extends AppCompatActivity {
     private void renderTintChips() {
         tintRow.removeAllViews();
 
-        for (int color : PRESET_COLOURS) {
-            final int c = color;
-            boolean isActive = currentTint == color;
+        for (int i = 0; i < PRESET_COLOURS.length; i++) {
+            final int c = PRESET_COLOURS[i];
+            boolean isActive = currentTint == c;
 
             LinearLayout frame = new LinearLayout(this);
             frame.setGravity(Gravity.CENTER);
@@ -215,8 +219,8 @@ public class MainActivity extends AppCompatActivity {
 
             GradientDrawable innerBg = new GradientDrawable();
             innerBg.setShape(GradientDrawable.OVAL);
-            innerBg.setColor(color);
-            if (color == WHITE) {
+            innerBg.setColor(c);
+            if (c == WHITE) {
                 // faint border so the white chip is visible on black background
                 innerBg.setStroke(dp(1), Color.rgb(80, 80, 80));
             }
@@ -227,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             frame.addView(inner, new LinearLayout.LayoutParams(innerSize, innerSize));
 
             frame.setOnClickListener(v -> setTint(c));
+            frame.setContentDescription(PRESET_NAMES[i] + " icon colour" + (isActive ? ", selected" : ""));
 
             LinearLayout.LayoutParams fp = new LinearLayout.LayoutParams(dp(42), dp(42));
             fp.setMargins(0, 0, dp(10), 0);
@@ -268,6 +273,7 @@ public class MainActivity extends AppCompatActivity {
         customFrame.addView(customInner, new LinearLayout.LayoutParams(customInnerSize, customInnerSize));
 
         customFrame.setOnClickListener(v -> showColourPicker());
+        customFrame.setContentDescription("Custom icon colour" + (customActive ? ", selected" : ""));
         tintRow.addView(customFrame, new LinearLayout.LayoutParams(dp(42), dp(42)));
     }
 
@@ -407,7 +413,14 @@ public class MainActivity extends AppCompatActivity {
         image.setImageResource(icon.resourceId);
         image.setAdjustViewBounds(true);
         image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        image.setColorFilter(currentTint, PorterDuff.Mode.SRC_IN);
+        // At the white default, leave icons untinted so the premium packs
+        // (Circuitry/Terminal/Xenocomm) keep their baked-in accent colours.
+        // Only override with SRC_IN once the user picks a colour.
+        if (currentTint == WHITE) {
+            image.clearColorFilter();
+        } else {
+            image.setColorFilter(currentTint, PorterDuff.Mode.SRC_IN);
+        }
         tile.addView(image, new LinearLayout.LayoutParams(dp(54), dp(54)));
 
         TextView label = new TextView(this);
