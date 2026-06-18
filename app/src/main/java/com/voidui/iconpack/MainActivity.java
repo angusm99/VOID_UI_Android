@@ -1,5 +1,6 @@
 package com.voidui.iconpack;
 
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
@@ -45,12 +46,16 @@ public class MainActivity extends AppCompatActivity {
         Color.parseColor("#FF007F"),  // neon pink
     };
 
+    private static final String PREFS = "void_ui_prefs";
+    private static final String PREF_TINT = "icon_tint";
+
     private final List<IconItem> icons = new ArrayList<>();
     private final List<TextView> categoryButtons = new ArrayList<>();
     private LinearLayout categoryRow;
     private LinearLayout tintRow;
     private GridLayout iconGrid;
     private TextView countView;
+    private SharedPreferences prefs;
     private String activeCategory = ALL;
     private String query = "";
     private int currentTint = WHITE;
@@ -58,10 +63,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
+        currentTint = prefs.getInt(PREF_TINT, WHITE);
         loadIcons();
         setContentView(buildContent());
         renderTintChips();
         renderCategories();
+        renderIcons();
+    }
+
+    /** Sets the global icon tint, persists it, and refreshes the UI. */
+    private void setTint(int color) {
+        currentTint = color;
+        if (prefs != null) {
+            prefs.edit().putInt(PREF_TINT, color).apply();
+        }
+        renderTintChips();
         renderIcons();
     }
 
@@ -134,10 +151,18 @@ public class MainActivity extends AppCompatActivity {
         );
         root.addView(search, searchParams);
 
-        // Colour tint row
+        // Colour tint row (global icon colour)
+        TextView tintLabel = new TextView(this);
+        tintLabel.setText("ICON COLOUR");
+        tintLabel.setTextColor(MUTED);
+        tintLabel.setTextSize(11);
+        tintLabel.setLetterSpacing(0.10f);
+        tintLabel.setPadding(0, dp(14), 0, 0);
+        root.addView(tintLabel);
+
         HorizontalScrollView tintScroll = new HorizontalScrollView(this);
         tintScroll.setHorizontalScrollBarEnabled(false);
-        tintScroll.setPadding(0, dp(14), 0, dp(4));
+        tintScroll.setPadding(0, dp(8), 0, dp(4));
         tintRow = new LinearLayout(this);
         tintRow.setOrientation(LinearLayout.HORIZONTAL);
         tintRow.setGravity(Gravity.CENTER_VERTICAL);
@@ -201,11 +226,7 @@ public class MainActivity extends AppCompatActivity {
             int innerSize = isActive ? dp(26) : dp(34);
             frame.addView(inner, new LinearLayout.LayoutParams(innerSize, innerSize));
 
-            frame.setOnClickListener(v -> {
-                currentTint = c;
-                renderTintChips();
-                renderIcons();
-            });
+            frame.setOnClickListener(v -> setTint(c));
 
             LinearLayout.LayoutParams fp = new LinearLayout.LayoutParams(dp(42), dp(42));
             fp.setMargins(0, 0, dp(10), 0);
@@ -319,11 +340,7 @@ public class MainActivity extends AppCompatActivity {
         new AlertDialog.Builder(this)
                 .setTitle("Custom colour")
                 .setView(layout)
-                .setPositiveButton("Apply", (d, w) -> {
-                    currentTint = Color.rgb(rgb[0], rgb[1], rgb[2]);
-                    renderTintChips();
-                    renderIcons();
-                })
+                .setPositiveButton("Apply", (d, w) -> setTint(Color.rgb(rgb[0], rgb[1], rgb[2])))
                 .setNegativeButton("Cancel", null)
                 .show();
     }
