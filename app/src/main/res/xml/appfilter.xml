@@ -61,7 +61,6 @@
     <item component="ComponentInfo{com.google.android.apps.bard/com.google.android.apps.bard.MainActivity}" drawable="gemini_v2"/>
     <item component="ComponentInfo{ai.perplexity.app.android/ai.perplexity.app.android.MainActivity}" drawable="perplexity"/>
     <item component="ComponentInfo{com.microsoft.copilot/com.microsoft.copilot.MainActivity}" drawable="copilot_v1"/>
-    <item component="ComponentInfo{com.xai.grok/com.xai.grok.MainActivity}" drawable="grok_v1"/>
     <item component="ComponentInfo{com.deepseek.app/com.deepseek.app.MainActivity}" drawable="deepseek"/>
     <item component="ComponentInfo{com.google.android.apps.googleassistant/com.google.android.apps.assistant.AssistantActivity}" drawable="bot"/>
     <item component="ComponentInfo{com.amazon.dee.app/com.amazon.dee.app.ui.MainActivity}" drawable="chat_bot"/>
@@ -199,7 +198,6 @@
     <item component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.ui.MainActivity}" drawable="ic_files"/>
     <item component="ComponentInfo{ai.perplexity.app.android/ai.perplexity.app.android.ui.main.MainActivity}" drawable="ic_perplexity"/>
     <item component="ComponentInfo{ai.x.grok/ai.x.grok.main.GrokActivity}" drawable="ic_grok"/>
-    <item component="ComponentInfo{com.anthropic.claude/com.anthropic.claude.mainactivity.MainActivity}" drawable="claude_v4"/>
     <item component="ComponentInfo{com.google.android.apps.authenticator2/com.google.android.apps.authenticator2.main.MainActivity}" drawable="fingerprint"/>
     <item component="ComponentInfo{com.google.android.apps.fitness/com.google.android.apps.fitness.welcome.WelcomeActivity}" drawable="ic_heartrate"/>
     <item component="ComponentInfo{com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivity}" drawable="ic_voice_assistant"/>
@@ -377,7 +375,6 @@
     <item component="ComponentInfo{za.co.fnb.connect.itt/.gui.ZoneWelcomeActivity}" drawable="ic_bank"/>
     <item component="ComponentInfo{za.co.gotyme/com.tymex.splashScreen.resources.Default}" drawable="ic_wallet"/>
     <item component="ComponentInfo{za.co.mip.mobicredApp/com.example.mobicred.MainActivity}" drawable="ic_credit_card"/>
-    <item component="ComponentInfo{za.co.shoprite.sixty60/.MainActivity}" drawable="ic_shopping_cart"/>
     <item component="ComponentInfo{za.co.stargate.starlitemobi/com.embarcadero.firemonkey.FMXNativeActivity}" drawable="ic_store_shop"/>
     <item component="ComponentInfo{za.co.vodacom.android.app/com.myvodacomx.MainActivity}" drawable="ic_signal"/>
     <item component="ComponentInfo{za.org.elections.iecapp/crc641b0d860257576a70.SplashActivity}" drawable="flag"/>

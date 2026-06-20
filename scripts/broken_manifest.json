@@ -1,0 +1,374 @@
+{
+  "fixable": [
+    {
+      "drawable": "chatgpt.xml",
+      "stem": "chatgpt",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\02_VOID_UI\\ai_brands\\chatgpt.svg"
+      ]
+    },
+    {
+      "drawable": "code.xml",
+      "stem": "code",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\04_SYSTEM_UICONS\\code.svg"
+      ]
+    },
+    {
+      "drawable": "grok.xml",
+      "stem": "grok",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\02_VOID_UI\\ai_brands\\grok.svg"
+      ]
+    },
+    {
+      "drawable": "ic_bluetooth.xml",
+      "stem": "ic_bluetooth",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\05_CIRCUITRY\\ic_bluetooth.svg",
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\01_APP_ICONS\\bare\\ic_bluetooth.svg",
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\01_APP_ICONS\\framed\\ic_bluetooth.svg"
+      ]
+    },
+    {
+      "drawable": "record.xml",
+      "stem": "record",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\04_SYSTEM_UICONS\\record.svg"
+      ]
+    },
+    {
+      "drawable": "target.xml",
+      "stem": "target",
+      "status": "empty",
+      "sources": [
+        "C:\\Users\\User\\CLAUDE\\VOID_UI\\01_ICON_PACK_MASTER\\ICON_MASTER\\04_SYSTEM_UICONS\\target.svg"
+      ]
+    }
+  ],
+  "unfixable": [
+    {
+      "drawable": "chatgpt_v1.xml",
+      "stem": "chatgpt_v1",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "chatgpt_v3.xml",
+      "stem": "chatgpt_v3",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "claude_v4.xml",
+      "stem": "claude_v4",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "copilot_v2.xml",
+      "stem": "copilot_v2",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "copilot_v3.xml",
+      "stem": "copilot_v3",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "grok_v1.xml",
+      "stem": "grok_v1",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "grok_v2.xml",
+      "stem": "grok_v2",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "grok_v3.xml",
+      "stem": "grok_v3",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "grok_v4.xml",
+      "stem": "grok_v4",
+      "status": "black_only",
+      "sources": []
+    },
+    {
+      "drawable": "ic_ai_agent_network.xml",
+      "stem": "ic_ai_agent_network",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_ai_data_processing.xml",
+      "stem": "ic_ai_data_processing",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_ai_model.xml",
+      "stem": "ic_ai_model",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_ai_pipeline.xml",
+      "stem": "ic_ai_pipeline",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_ai_swarm.xml",
+      "stem": "ic_ai_swarm",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_bicycle.xml",
+      "stem": "ic_bicycle",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_bug_virus.xml",
+      "stem": "ic_bug_virus",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_capacitor.xml",
+      "stem": "ic_capacitor",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_chart_pie.xml",
+      "stem": "ic_chart_pie",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_clock_time.xml",
+      "stem": "ic_clock_time",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_coins_finance.xml",
+      "stem": "ic_coins_finance",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_community.xml",
+      "stem": "ic_community",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_diamond_premium.xml",
+      "stem": "ic_diamond_premium",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_diode.xml",
+      "stem": "ic_diode",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_download.xml",
+      "stem": "ic_download",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_equalizer.xml",
+      "stem": "ic_equalizer",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_followers.xml",
+      "stem": "ic_followers",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_hashtag.xml",
+      "stem": "ic_hashtag",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_key.xml",
+      "stem": "ic_key",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_lightning.xml",
+      "stem": "ic_lightning",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_mountain.xml",
+      "stem": "ic_mountain",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_navigation_arrow.xml",
+      "stem": "ic_navigation_arrow",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_neural_network.xml",
+      "stem": "ic_neural_network",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_package_box.xml",
+      "stem": "ic_package_box",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_pin_thumbtack.xml",
+      "stem": "ic_pin_thumbtack",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_play_button.xml",
+      "stem": "ic_play_button",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_pulse_heartbeat.xml",
+      "stem": "ic_pulse_heartbeat",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_resistor.xml",
+      "stem": "ic_resistor",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_running_person.xml",
+      "stem": "ic_running_person",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_search.xml",
+      "stem": "ic_search",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_settings_slider.xml",
+      "stem": "ic_settings_slider",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_share.xml",
+      "stem": "ic_share",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_shopping_cart.xml",
+      "stem": "ic_shopping_cart",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_snowflake.xml",
+      "stem": "ic_snowflake",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_sun.xml",
+      "stem": "ic_sun",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_target_goal.xml",
+      "stem": "ic_target_goal",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_transistor.xml",
+      "stem": "ic_transistor",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_tree.xml",
+      "stem": "ic_tree",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_upload.xml",
+      "stem": "ic_upload",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_verified_badge.xml",
+      "stem": "ic_verified_badge",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_vinyl_record.xml",
+      "stem": "ic_vinyl_record",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_wheelchair.xml",
+      "stem": "ic_wheelchair",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "ic_yoga_meditation.xml",
+      "stem": "ic_yoga_meditation",
+      "status": "empty",
+      "sources": []
+    },
+    {
+      "drawable": "notion_v1.xml",
+      "stem": "notion_v1",
+      "status": "black_only",
+      "sources": []
+    }
+  ]
+}

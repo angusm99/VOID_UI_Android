@@ -25,6 +25,8 @@ COLOR_MAP = {
     "ZONE_PRIMARY": "#FF00FFFF",
     "ZONE_SECONDARY": "#FFFF007F",
     "ZONE_ACCENT": "#FFFFFFFF",
+    "currentcolor": "#FFFFFFFF",
+    "currentColor": "#FFFFFFFF",
 }
 
 
