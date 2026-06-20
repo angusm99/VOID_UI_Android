@@ -172,9 +172,20 @@ def path_style(attrs):
     return values
 
 
+def is_bg_plate(path_data, attrs):
+    """True for the standard full-viewport black background rect — skip it."""
+    fill = attrs.get("fill", "")
+    is_black = fill.lower() in ("#000", "#000000", "black", "#ff000000")
+    is_full = path_data and "M0" in path_data and "H512" in path_data and "Z" in path_data
+    has_stroke = bool(attrs.get("stroke"))
+    return is_black and is_full and not has_stroke
+
+
 def emit_path(path_data, attrs):
     if not path_data:
         return []
+    if is_bg_plate(path_data, attrs):
+        return []  # skip opaque black bg plate — let launcher/gallery provide the canvas
     style = path_style(attrs)
     if not style:
         style = [("android:fillColor", "#00000000")]

@@ -413,9 +413,7 @@ public class MainActivity extends AppCompatActivity {
         image.setImageResource(icon.resourceId);
         image.setAdjustViewBounds(true);
         image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        // At the white default, leave icons untinted so the premium packs
-        // (Circuitry/Terminal/Xenocomm) keep their baked-in accent colours.
-        // Only override with SRC_IN once the user picks a colour.
+        image.setBackgroundColor(BLACK);
         if (currentTint == WHITE) {
             image.clearColorFilter();
         } else {

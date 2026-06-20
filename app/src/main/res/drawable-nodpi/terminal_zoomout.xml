@@ -2,11 +2,7 @@
     android:width="512dp"
     android:height="512dp"
     android:viewportWidth="512"
-    android:viewportHeight="512">
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M0,0 H512 V512 H0 Z"/>
-    <path
+    android:viewportHeight="512">    <path
         android:strokeColor="#FFFFB000"
         android:strokeWidth="14"
         android:strokeLineCap="round"
