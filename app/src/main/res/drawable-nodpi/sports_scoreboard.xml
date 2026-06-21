@@ -5,13 +5,13 @@
     android:viewportHeight="512">
     <path
         android:strokeColor="#FF00FFFF"
-        android:strokeWidth="12"
+        android:strokeWidth="14.0"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M110,150 H402 Q412,150 412,160 V340 Q412,350 402,350 H110 Q100,350 100,340 V160 Q100,150 110,150 Z"/>
     <path
         android:strokeColor="#FFFF007F"
-        android:strokeWidth="12"
+        android:strokeWidth="14.0"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M256,150 L256,350"/>

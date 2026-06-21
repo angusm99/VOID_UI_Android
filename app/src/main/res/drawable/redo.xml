@@ -8,13 +8,13 @@
         android:translateY="7">
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M16.5 6.5c-3.17-4-6.17-6-9-6-2.83 0-5.16 1-7 3"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M11.5 6.5h5v-5"/>

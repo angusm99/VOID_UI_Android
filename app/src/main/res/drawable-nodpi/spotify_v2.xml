@@ -6,17 +6,17 @@
     
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="5"
+        android:strokeWidth="1.75"
         android:strokeLineCap="round"
         android:pathData="M10 20Q32 10 54 18"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="5"
+        android:strokeWidth="1.75"
         android:strokeLineCap="round"
         android:pathData="M14 32Q32 24 50 30"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="5"
+        android:strokeWidth="1.75"
         android:strokeLineCap="round"
         android:pathData="M18 44Q32 38 46 42"/>
 </vector>

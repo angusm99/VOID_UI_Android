@@ -8,37 +8,37 @@
         android:translateY="4">
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M3.5 3.17h9"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M4.48 6.2l1-0.02c0.51-0.01 0.94 0.37 1.01 0.87l0.01 0.13v0.99c0 0.54-0.44 0.99-0.98 1l-1 0.02c-0.51 0.01-0.94-0.37-1.01-0.87l-0.01-0.13v-0.99c0-0.54 0.44-0.99 0.98-1z"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M2.5 0.15h11c1.1 0 2 0.9 2 2v10.02h-13c-1.1 0-2-0.9-2-2v-8.02c0-1.1 0.9-2 2-2z"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M8.5 6.17h4"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M8.5 9.16h4"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.57"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M15 12.17c1.38 0 2.5-1.12 2.5-2.5v-6.5h-2"/>
