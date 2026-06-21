@@ -14,3 +14,7 @@ local.properties
 # Source asset folders (not part of Android build)
 ICONS App Pack/
 ICONS 2 App Pack/
+
+# Python
+scripts/__pycache__/
+*.pyc
