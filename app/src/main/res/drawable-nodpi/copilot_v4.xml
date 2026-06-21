@@ -3,9 +3,7 @@
     android:height="64dp"
     android:viewportWidth="64"
     android:viewportHeight="64">
-    <path
-        android:fillColor="#FF000000"
-        android:pathData="M0 0h64v64H0z"/>
+    
     <path
         android:strokeColor="#FFFFFFFF"
         android:strokeWidth="4.5"
