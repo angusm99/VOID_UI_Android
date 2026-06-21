@@ -15,6 +15,7 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\User\CLAUDE\VOID_UI")
 MASTER_XENO = ROOT / "01_ICON_PACK_MASTER" / "ICON_MASTER" / "09_XENOCOMM"
+MASTER_TERMINAL = ROOT / "01_ICON_PACK_MASTER" / "ICON_MASTER" / "06_TERMINAL"
 RES = ROOT / "02_ANDROID_ICON_PACK_APP" / "VOID_UI_Android" / "app" / "src" / "main" / "res"
 DRAWABLE = RES / "drawable"
 NODPI = RES / "drawable-nodpi"
@@ -270,6 +271,63 @@ GLYPHS = {
     f'<line x1="256" y1="256" x2="318" y2="288" {S}/><circle cx="256" cy="256" r="12" {F}/>',
 "vpn": f'<path d="M256 130 L362 172 V266 C362 330 314 368 256 390 C198 368 150 330 150 266 V172 Z" {S}/>'
     f'<circle cx="256" cy="248" r="26" {S}/><line x1="256" y1="274" x2="256" y2="312" {S}/>',
+# ── Terminal-pack concepts (white monoline) ──
+"ammobox": f'<rect x="156" y="216" width="200" height="156" rx="12" {S}/><rect x="178" y="184" width="156" height="34" rx="8" {S}/>'
+    f'<line x1="214" y1="262" x2="214" y2="330" {ST}/><line x1="256" y1="262" x2="256" y2="330" {ST}/><line x1="298" y1="262" x2="298" y2="330" {ST}/>',
+"archive": f'<rect x="150" y="156" width="212" height="48" rx="8" {S}/><path d="M170 204 V356 H342 V204" {S}/><line x1="222" y1="252" x2="290" y2="252" {S}/>',
+"back": f'<line x1="346" y1="256" x2="174" y2="256" {S}/><polyline points="224,206 174,256 224,306" {S}/>',
+"biohazard": f'<circle cx="256" cy="194" r="42" {S}/><circle cx="200" cy="306" r="42" {S}/><circle cx="312" cy="306" r="42" {S}/><circle cx="256" cy="270" r="18" {F}/>',
+"canteen": f'<rect x="188" y="198" width="136" height="174" rx="42" {S}/><rect x="230" y="166" width="52" height="36" rx="6" {S}/><line x1="324" y1="250" x2="356" y2="250" {S}/>',
+"chip_cpu": f'<rect x="186" y="186" width="140" height="140" rx="14" {S}/><rect x="222" y="222" width="68" height="68" {ST}/>'
+    f'<line x1="218" y1="186" x2="218" y2="156" {S}/><line x1="294" y1="186" x2="294" y2="156" {S}/>'
+    f'<line x1="218" y1="326" x2="218" y2="356" {S}/><line x1="294" y1="326" x2="294" y2="356" {S}/>'
+    f'<line x1="186" y1="218" x2="156" y2="218" {S}/><line x1="186" y1="294" x2="156" y2="294" {S}/>'
+    f'<line x1="326" y1="218" x2="356" y2="218" {S}/><line x1="326" y1="294" x2="356" y2="294" {S}/>',
+"dashboard": f'<path d="M148 318 A114 114 0 0 1 364 318" {S}/><line x1="256" y1="318" x2="322" y2="246" {S}/><circle cx="256" cy="318" r="14" {F}/>',
+"error": f'<circle cx="256" cy="256" r="116" {S}/><line x1="212" y1="212" x2="300" y2="300" {S}/><line x1="300" y1="212" x2="212" y2="300" {S}/>',
+"explosion": f'<polygon points="256,134 290,210 366,196 318,260 380,300 300,306 314,382 256,326 198,382 212,306 132,300 194,260 146,196 222,210" {S}/>',
+"fist": f'<rect x="186" y="222" width="156" height="124" rx="30" {S}/><line x1="218" y1="222" x2="218" y2="198" {S}/><line x1="256" y1="222" x2="256" y2="194" {S}/>'
+    f'<line x1="294" y1="222" x2="294" y2="198" {S}/><path d="M186 268 H160 A18 18 0 0 0 160 304 H186" {S}/>',
+"flashlight": f'<polygon points="210,158 302,158 286,216 226,216" {S}/><rect x="224" y="216" width="64" height="156" rx="8" {S}/><line x1="256" y1="118" x2="256" y2="146" {ST}/>',
+"fullscreen": f'<polyline points="152,212 152,152 212,152" {S}/><polyline points="300,152 360,152 360,212" {S}/>'
+    f'<polyline points="360,300 360,360 300,360" {S}/><polyline points="212,360 152,360 152,300" {S}/>',
+"gear_cog": f'<circle cx="256" cy="256" r="60" {S}/><circle cx="256" cy="256" r="22" {ST}/>'
+    + "".join(f'<line x1="{256+round(60*__import__("math").cos(a))}" y1="{256+round(60*__import__("math").sin(a))}" '
+              f'x2="{256+round(98*__import__("math").cos(a))}" y2="{256+round(98*__import__("math").sin(a))}" '
+              f'stroke="#FFFFFF" stroke-width="20" stroke-linecap="round"/>' for a in [i*0.7854 for i in range(8)]),
+"google_maps": f'<path d="M256 148 C 202 148 164 190 164 242 C 164 312 256 384 256 384 C 256 384 348 312 348 242 C 348 190 310 148 256 148 Z" {S}/>'
+    f'<circle cx="256" cy="238" r="34" {S}/>',
+"helmet": f'<path d="M150 286 A108 108 0 0 1 366 286 Z" {S}/><line x1="150" y1="286" x2="366" y2="286" {S}/><rect x="300" y="250" width="60" height="36" rx="6" {S}/>',
+"linechart": f'<path d="M158 138 V374 H394" {S}/><polyline points="186,322 246,250 300,284 372,188" {S}/>',
+"maximize": f'<rect x="166" y="166" width="180" height="180" rx="14" {S}/><polyline points="264,200 312,200 312,248" {ST}/><polyline points="248,312 200,312 200,264" {ST}/>',
+"medkit": f'<rect x="150" y="200" width="212" height="160" rx="20" {S}/><rect x="216" y="176" width="80" height="26" rx="6" {S}/>'
+    f'<line x1="256" y1="240" x2="256" y2="320" {S}/><line x1="216" y1="280" x2="296" y2="280" {S}/>',
+"minimize": f'<rect x="166" y="166" width="180" height="180" rx="14" {S}/><polyline points="200,264 248,264 248,312" {ST}/><polyline points="312,248 264,248 264,200" {ST}/>',
+"package": f'<polygon points="256,148 360,206 360,330 256,388 152,330 152,206" {S}/><line x1="152" y1="206" x2="256" y2="264" {ST}/>'
+    f'<line x1="360" y1="206" x2="256" y2="264" {ST}/><line x1="256" y1="264" x2="256" y2="388" {ST}/>',
+"piechart": f'<circle cx="256" cy="256" r="112" {S}/><line x1="256" y1="256" x2="256" y2="144" {S}/><line x1="256" y1="256" x2="352" y2="300" {S}/>',
+"power_nuclear": f'<path d="M204 198 A82 82 0 1 0 308 198" {S}/><line x1="256" y1="150" x2="256" y2="250" {S}/>',
+"question": f'<path d="M210 214 A46 46 0 1 1 256 282 V304" {S}/><circle cx="256" cy="352" r="11" {F}/>',
+"radar": f'<circle cx="256" cy="256" r="112" {S}/><circle cx="256" cy="256" r="62" {ST}/><line x1="256" y1="256" x2="342" y2="178" {S}/><circle cx="304" cy="298" r="9" {F}/>',
+"radiation": f'<circle cx="256" cy="256" r="22" {F}/>'
+    + "".join((lambda al, ar: f'<polygon points="{256+round(42*__import__("math").cos(al))},{256+round(42*__import__("math").sin(al))} '
+              f'{256+round(106*__import__("math").cos(al))},{256+round(106*__import__("math").sin(al))} '
+              f'{256+round(106*__import__("math").cos(ar))},{256+round(106*__import__("math").sin(ar))} '
+              f'{256+round(42*__import__("math").cos(ar))},{256+round(42*__import__("math").sin(ar))}" {F}/>')(th-0.49, th+0.49)
+              for th in [1.5708, 3.6652, 5.7596]),
+"shield": f'<path d="M256 132 L360 172 V268 C360 330 314 366 256 388 C198 366 152 330 152 268 V172 Z" {S}/><polyline points="216,254 246,286 304,222" {S}/>',
+"skull": f'<path d="M170 252 A86 92 0 0 1 342 252 V300 A30 30 0 0 1 312 330 H306 V362 H206 V330 H200 A30 30 0 0 1 170 300 Z" {S}/>'
+    f'<circle cx="216" cy="260" r="22" {F}/><circle cx="296" cy="260" r="22" {F}/><line x1="240" y1="330" x2="240" y2="362" {ST}/><line x1="272" y1="330" x2="272" y2="362" {ST}/>',
+"sort": f'<line x1="170" y1="196" x2="320" y2="196" {S}/><line x1="170" y1="256" x2="280" y2="256" {S}/><line x1="170" y1="316" x2="240" y2="316" {S}/>'
+    f'<polyline points="330,278 358,316 386,278" {ST}/><line x1="358" y1="196" x2="358" y2="316" {ST}/>',
+"success": f'<circle cx="256" cy="256" r="116" {S}/><polyline points="208,258 244,296 312,220" {S}/>',
+"twitter_x": f'<line x1="166" y1="166" x2="346" y2="346" {S}/><line x1="346" y1="166" x2="166" y2="346" {S}/>',
+"vault": f'<rect x="142" y="142" width="228" height="228" rx="20" {S}/><circle cx="256" cy="256" r="78" {S}/><circle cx="256" cy="256" r="14" {F}/>'
+    f'<line x1="256" y1="178" x2="256" y2="148" {ST}/><line x1="256" y1="334" x2="256" y2="364" {ST}/><line x1="178" y1="256" x2="148" y2="256" {ST}/><line x1="334" y1="256" x2="364" y2="256" {ST}/>',
+"warning": f'<path d="M256 152 L372 358 H140 Z" {S}/><line x1="256" y1="232" x2="256" y2="296" {S}/><circle cx="256" cy="330" r="9" {F}/>',
+"wrench": f'<path d="M330 182 A56 56 0 1 0 300 280 L210 370 A28 28 0 0 1 170 330 L260 240 A56 56 0 0 1 330 182 Z" {S}/>',
+"zoomin": f'<circle cx="232" cy="232" r="86" {S}/><line x1="294" y1="294" x2="364" y2="364" {S}/><line x1="232" y1="198" x2="232" y2="266" {ST}/><line x1="198" y1="232" x2="266" y2="232" {ST}/>',
+"zoomout": f'<circle cx="232" cy="232" r="86" {S}/><line x1="294" y1="294" x2="364" y2="364" {S}/><line x1="198" y1="232" x2="266" y2="232" {ST}/>',
 }
 
 # ── concept → existing core drawable matching (same logic as analysis) ──
@@ -280,16 +338,17 @@ def is_core(stem):
         return False
     return True
 
-def build_match():
+def build_match(prefix="xeno_"):
     core = {p.stem.removeprefix("ic_"): p.stem for p in DRAWABLE.glob("*.xml") if is_core(p.stem)}
     SYN = {"algorithm":"code","crypto":"blockchain","data_stream":"database","deep_learning":"neural",
            "deploy":"cloud_upload","encode":"code","encrypt":"lock","machine_learning":"neural",
            "memory_bank":"database","payment":"wallet","ping":"signal","receive":"download",
            "security":"shield","store":"shop","sync":"refresh","transmit":"upload","unlock":"lock",
-           "vpn":"shield","chart_up":"analytics","memory":"database"}
+           "vpn":"shield","chart_up":"analytics","memory":"database",
+           "barchart":"analytics","google_maps":"map","twitter_x":"x_twitter"}
     match = {}
-    for p in sorted(DRAWABLE.glob("xeno_*.xml")):
-        c = p.stem.removeprefix("xeno_")
+    for p in sorted(DRAWABLE.glob(f"{prefix}*.xml")):
+        c = p.stem[len(prefix):]
         if c in GLYPHS:
             continue  # hand-authored
         for cand in (c, c.replace("_",""), c.split("_")[0], SYN.get(c,"")):
@@ -297,38 +356,39 @@ def build_match():
                 match[c] = core[cand]; break
     return match
 
-def main():
-    match = build_match()
-    authored = list(GLYPHS.keys())
-    all_xeno = [p.stem.removeprefix("xeno_") for p in sorted(DRAWABLE.glob("xeno_*.xml"))]
-    missing = [c for c in all_xeno if c not in match and c not in GLYPHS]
+def main(prefix="xeno_", master_dir=MASTER_XENO):
+    match = build_match(prefix)
+    real = {p.stem[len(prefix):] for p in DRAWABLE.glob(f"{prefix}*.xml")}
+    missing = [c for c in sorted(real) if c not in match and c not in GLYPHS]
 
     n_auth = n_match = 0
-    # 1. authored glyphs
+    # 1. authored glyphs (only those that are real icons in this pack)
     for c, body in GLYPHS.items():
+        if c not in real:
+            continue
         paths = convert_svg_body(body)
         if not paths:
             print(f"  !! no paths for authored {c}"); continue
         xml = wrap_xml(paths)
-        (DRAWABLE / f"xeno_{c}.xml").write_text(xml, encoding="utf-8")
-        (NODPI / f"xeno_{c}.xml").write_text(xml, encoding="utf-8")
-        (MASTER_XENO / f"xeno_{c}.svg").write_text(wrap_svg(body), encoding="utf-8")
+        (DRAWABLE / f"{prefix}{c}.xml").write_text(xml, encoding="utf-8")
+        (NODPI / f"{prefix}{c}.xml").write_text(xml, encoding="utf-8")
+        (master_dir / f"{prefix}{c}.svg").write_text(wrap_svg(body), encoding="utf-8")
         n_auth += 1
     # 2. recoloured core glyphs
     for c, src in match.items():
         src_file = DRAWABLE / f"{src}.xml"
         if not src_file.exists():
-            print(f"  !! source missing {src} for xeno_{c}"); continue
+            print(f"  !! source missing {src} for {prefix}{c}"); continue
         xml = recolor_drawable(src_file.read_text(encoding="utf-8"))
-        (DRAWABLE / f"xeno_{c}.xml").write_text(xml, encoding="utf-8")
-        (NODPI / f"xeno_{c}.xml").write_text(xml, encoding="utf-8")
+        (DRAWABLE / f"{prefix}{c}.xml").write_text(xml, encoding="utf-8")
+        (NODPI / f"{prefix}{c}.xml").write_text(xml, encoding="utf-8")
         n_match += 1
 
-    print(f"authored white glyphs: {n_auth}")
-    print(f"recoloured core glyphs: {n_match}")
-    print(f"total regenerated: {n_auth + n_match} / {len(all_xeno)}")
+    print(f"[{prefix}] authored white glyphs: {n_auth}")
+    print(f"[{prefix}] recoloured core glyphs: {n_match}")
+    print(f"[{prefix}] total regenerated: {n_auth + n_match} / {len(real)}")
     if missing:
-        print(f"UNHANDLED ({len(missing)}): {missing}")
+        print(f"[{prefix}] UNHANDLED ({len(missing)}): {missing}")
 
 if __name__ == "__main__":
     main()

@@ -2,22 +2,41 @@
     android:width="512dp"
     android:height="512dp"
     android:viewportWidth="512"
-    android:viewportHeight="512">    <path
-        android:strokeColor="#FFFFB000"
+    android:viewportHeight="512">
+    <path
+        android:strokeColor="#FFFFFFFF"
         android:strokeWidth="14"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M148,128 H364 Q384,128 384,148 V364 Q384,384 364,384 H148 Q128,384 128,364 V148 Q128,128 148,128 Z"/>
+        android:pathData="M256,96 L336,196 L256,256 L336,316 L256,416 Z"/>
     <path
-        android:strokeColor="#FFFFB000"
+        android:strokeColor="#FFFFFFFF"
         android:strokeWidth="14"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
-        android:pathData="M128,128 L384,384"/>
+        android:pathData="M256,96 L256,416"/>
     <path
-        android:fillColor="#FFFFB000"
-        android:pathData="M120,128 A8,8 0,1 0 136,128 A8,8 0,1 0 120,128"/>
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M176,196 L336,316"/>
     <path
-        android:fillColor="#FFFFB000"
-        android:pathData="M376,384 A8,8 0,1 0 392,384 A8,8 0,1 0 376,384"/>
+        android:strokeColor="#FFFFFFFF"
+        android:strokeWidth="14"
+        android:strokeLineCap="round"
+        android:strokeLineJoin="round"
+        android:pathData="M176,316 L336,196"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M159,196 A9,9 0,1 0 177,196 A9,9 0,1 0 159,196"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M159,316 A9,9 0,1 0 177,316 A9,9 0,1 0 159,316"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M335,196 A9,9 0,1 0 353,196 A9,9 0,1 0 335,196"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M335,316 A9,9 0,1 0 353,316 A9,9 0,1 0 335,316"/>
 </vector>
