@@ -5,7 +5,7 @@
     android:viewportHeight="512">
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="20"
+        android:strokeWidth="15"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M170 252 A86 92 0 0 1 342 252 V300 A30 30 0 0 1 312 330 H306 V362 H206 V330 H200 A30 30 0 0 1 170 300 Z"/>
@@ -17,13 +17,13 @@
         android:pathData="M274,260 A22,22 0,1 0 318,260 A22,22 0,1 0 274,260"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="16"
+        android:strokeWidth="11"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M240,330 L240,362"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="16"
+        android:strokeWidth="11"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M272,330 L272,362"/>

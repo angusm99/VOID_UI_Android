@@ -8,19 +8,19 @@
         android:pathData="M240,256 A16,16 0,1 0 272,256 A16,16 0,1 0 240,256"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="16"
+        android:strokeWidth="11"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M256 156 A60 150 0 1 0 256 356 A60 150 0 1 0 256 156"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="16"
+        android:strokeWidth="11"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M169 206 A60 150 60 1 0 343 306 A60 150 60 1 0 169 206"/>
     <path
         android:strokeColor="#FFFFFFFF"
-        android:strokeWidth="16"
+        android:strokeWidth="11"
         android:strokeLineCap="round"
         android:strokeLineJoin="round"
         android:pathData="M169 306 A60 150 -60 1 0 343 206 A60 150 -60 1 0 169 306"/>

@@ -8,31 +8,31 @@
         android:translateY="2">
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.62"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M8.5 14.5c3.33 0 6-2.64 6-5.97 0-3.33-2.67-6.03-6-6.03-3.33 0-6 2.7-6 6.03 0 3.33 2.67 5.97 6 5.97z"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.62"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M0.5 8.5h2"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.62"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M14.5 8.5h2"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.62"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M7.5 1.5h2"/>
         <path
             android:strokeColor="#FFFFFFFF"
-            android:strokeWidth="1"
+            android:strokeWidth="0.62"
             android:strokeLineCap="round"
             android:strokeLineJoin="round"
             android:pathData="M7.5 15.5h2"/>

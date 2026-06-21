@@ -22,6 +22,8 @@ NODPI = RES / "drawable-nodpi"
 
 WHITE = "#FFFFFFFF"
 ANS = "{http://schemas.android.com/apk/res/android}"
+# core glyphs measure ~24px effective stroke at 512; thin to ~15 to match authored
+STROKE_SCALE = 0.62
 
 # ── minimal SVG→VectorDrawable converter (primitives → path, white forced) ──
 def clean(v):
@@ -144,6 +146,11 @@ def recolor_drawable(text):
             return ""  # background plate starting at origin — drop it
         return tag
     text = re.sub(r"<path\b.*?/>", strip_plate, text, flags=re.DOTALL)
+    # thin core-glyph strokes ~35% so they match the lighter authored weight.
+    # account for group scale so effective stroke lands near the 15px target.
+    def scale_w(m):
+        return f'android:strokeWidth="{round(float(m.group(1)) * STROKE_SCALE, 2)}"'
+    text = re.sub(r'android:strokeWidth="([\d.]+)"', scale_w, text)
     # force every remaining non-transparent colour to white
     def repl(m):
         attr, val = m.group(1), m.group(2)
@@ -155,8 +162,8 @@ def recolor_drawable(text):
     return text
 
 # ── default monoline style for authored glyphs ──
-S = 'fill="none" stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round"'
-ST = 'fill="none" stroke="#FFFFFF" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"'
+S = 'fill="none" stroke="#FFFFFF" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"'
+ST = 'fill="none" stroke="#FFFFFF" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"'
 F = 'fill="#FFFFFF"'
 
 GLYPHS = {
@@ -294,7 +301,7 @@ GLYPHS = {
 "gear_cog": f'<circle cx="256" cy="256" r="60" {S}/><circle cx="256" cy="256" r="22" {ST}/>'
     + "".join(f'<line x1="{256+round(60*__import__("math").cos(a))}" y1="{256+round(60*__import__("math").sin(a))}" '
               f'x2="{256+round(98*__import__("math").cos(a))}" y2="{256+round(98*__import__("math").sin(a))}" '
-              f'stroke="#FFFFFF" stroke-width="20" stroke-linecap="round"/>' for a in [i*0.7854 for i in range(8)]),
+              f'stroke="#FFFFFF" stroke-width="15" stroke-linecap="round"/>' for a in [i*0.7854 for i in range(8)]),
 "google_maps": f'<path d="M256 148 C 202 148 164 190 164 242 C 164 312 256 384 256 384 C 256 384 348 312 348 242 C 348 190 310 148 256 148 Z" {S}/>'
     f'<circle cx="256" cy="238" r="34" {S}/>',
 "helmet": f'<path d="M150 286 A108 108 0 0 1 366 286 Z" {S}/><line x1="150" y1="286" x2="366" y2="286" {S}/><rect x="300" y="250" width="60" height="36" rx="6" {S}/>',
