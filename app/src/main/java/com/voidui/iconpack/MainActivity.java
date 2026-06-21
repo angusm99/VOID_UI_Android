@@ -438,7 +438,7 @@ public class MainActivity extends AppCompatActivity {
         params.height = dp(106);
         params.setMargins(0, 0, 0, dp(8));
         tile.setLayoutParams(params);
-        tile.setBackgroundColor(FAINT);
+        tile.setBackgroundColor(BLACK);
         tile.setContentDescription(icon.label + ", " + icon.category);
         return tile;
     }
