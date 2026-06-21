@@ -124,13 +124,29 @@ def wrap_svg(body):
 
 # ── recolour an existing core drawable to white, strip bg plate ──
 def recolor_drawable(text):
-    # drop full-viewport opaque black rect plate paths (64/108/512 variants)
-    text = re.sub(r'\s*<path\b(?=[^>]*fillColor="#FF000000")(?=[^>]*pathData="M0[ ,]?0[ ,]?[hH]?\d+[ ,]?[vV]?\d+[ ,]?[hH]?0?[ ,]?[zZ]?")[^>]*/>', '', text)
-    text = re.sub(r'\s*<path\b(?=[^>]*pathData="M0[ ,]0 H\d+ V\d+ H0 Z")(?=[^>]*fillColor="#FF000000")[^>]*/>', '', text)
-    # force every non-transparent colour to white
+    # Strip ANY full-canvas background plate: a fill-only path (no stroke) whose
+    # data starts at the origin (M0 ...). Covers square (M0 0 H..V..), rounded-rect
+    # app-icon plates (M0 24c0-13.25...), and 64/108/512 variants alike.
+    def strip_plate(m):
+        tag = m.group(0)
+        if "strokeColor" in tag:
+            return tag  # stroked shape — never a plate
+        pd = re.search(r'pathData="([^"]*)"', tag)
+        fc = re.search(r'fillColor="([^"]*)"', tag)
+        if not pd or not fc:
+            return tag
+        fill = fc.group(1)
+        if fill == "@android:color/transparent" or fill.upper() == "#00000000":
+            return tag
+        data = pd.group(1).lstrip()
+        if re.match(r"M\s*0[\s,cChHvVlLzZ]", data):
+            return ""  # background plate starting at origin — drop it
+        return tag
+    text = re.sub(r"<path\b.*?/>", strip_plate, text, flags=re.DOTALL)
+    # force every remaining non-transparent colour to white
     def repl(m):
         attr, val = m.group(1), m.group(2)
-        if val.upper() in ("#00000000",):
+        if val.upper() == "#00000000":
             return m.group(0)
         return f'{attr}="{WHITE}"'
     text = re.sub(r'(android:strokeColor)="(#[0-9A-Fa-f]{6,8})"', repl, text)
@@ -250,6 +266,10 @@ GLYPHS = {
     + f'<circle cx="238" cy="248" r="9" {F}/><circle cx="278" cy="272" r="9" {F}/>',
 "volume": f'<polygon points="170,216 210,216 258,176 258,336 210,296 170,296" {S}/>'
     f'<path d="M300 212 A70 70 0 0 1 300 300" {S}/><path d="M330 180 A116 116 0 0 1 330 332" {ST}/>',
+"clock": f'<circle cx="256" cy="256" r="112" {S}/><line x1="256" y1="256" x2="256" y2="172" {S}/>'
+    f'<line x1="256" y1="256" x2="318" y2="288" {S}/><circle cx="256" cy="256" r="12" {F}/>',
+"vpn": f'<path d="M256 130 L362 172 V266 C362 330 314 368 256 390 C198 368 150 330 150 266 V172 Z" {S}/>'
+    f'<circle cx="256" cy="248" r="26" {S}/><line x1="256" y1="274" x2="256" y2="312" {S}/>',
 }
 
 # ── concept → existing core drawable matching (same logic as analysis) ──
