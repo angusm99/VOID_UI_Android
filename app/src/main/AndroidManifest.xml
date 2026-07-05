@@ -56,6 +56,15 @@
             <intent-filter>
                 <action android:name="com.niagaralauncher.THEME" />
             </intent-filter>
+            <!-- Smart Launcher -->
+            <intent-filter>
+                <action android:name="ginlemon.smartlauncher.THEMES" />
+            </intent-filter>
+            <!-- GO Launcher -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.gau.go.launcherex.theme" />
+            </intent-filter>
         </activity>
 
     </application>

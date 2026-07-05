@@ -11,7 +11,7 @@ import re
 from pathlib import Path
 
 RES = Path(r"C:\Users\User\CLAUDE\VOID_UI\02_ANDROID_ICON_PACK_APP\VOID_UI_Android\app\src\main\res")
-DIRS = [RES / "drawable", RES / "drawable-nodpi"]
+DIRS = [RES / "drawable-nodpi"]
 
 PLATE_START = re.compile(r"M\s*0[\s,cChHvVlLzZ]")
 

@@ -255,7 +255,7 @@ def main():
         source_dir = MASTER / folder
         for svg_path in sorted(source_dir.glob(f"{prefix}*.svg")):
             vector = convert(svg_path)
-            for target_root in (ANDROID / "drawable", ANDROID / "drawable-nodpi"):
+            for target_root in (ANDROID / "drawable-nodpi",):
                 (target_root / f"{svg_path.stem}.xml").write_text(vector, encoding="utf-8")
             converted += 1
     print(f"Regenerated {converted} SVGs into drawable and drawable-nodpi")

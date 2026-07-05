@@ -1,863 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="icon_pack">
-        <item>alarm_clock</item>
-        <item>analytics</item>
-        <item>api</item>
-        <item>application</item>
-        <item>bell</item>
-        <item>bell_ringing</item>
-        <item>bicycle</item>
-        <item>blockchain</item>
-        <item>bluetooth</item>
-        <item>bookmark</item>
-        <item>bot</item>
-        <item>briefcase</item>
-        <item>browser</item>
-        <item>calculator</item>
-        <item>calendar</item>
-        <item>camera</item>
-        <item>car</item>
-        <item>chart__bar</item>
-        <item>chart__line</item>
-        <item>chat_bot</item>
-        <item>chatgpt</item>
-        <item>chatgpt_v1</item>
-        <item>chatgpt_v2</item>
-        <item>chatgpt_v3</item>
-        <item>chatgpt_v4</item>
-        <item>chatgpt_v5</item>
-        <item>check</item>
-        <item>check_circle</item>
-        <item>chevron_down</item>
-        <item>chevron_left</item>
-        <item>chevron_right</item>
-        <item>chevron_up</item>
-        <item>circuitry_airbnb</item>
-        <item>circuitry_amazon</item>
-        <item>circuitry_appletv</item>
-        <item>circuitry_bank</item>
-        <item>circuitry_bereal</item>
-        <item>circuitry_bluesky</item>
-        <item>circuitry_bluetooth</item>
-        <item>circuitry_browser</item>
-        <item>circuitry_calculator</item>
-        <item>circuitry_calendar</item>
-        <item>circuitry_camera</item>
-        <item>circuitry_chatgpt</item>
-        <item>circuitry_claude</item>
-        <item>circuitry_clock</item>
-        <item>circuitry_coinbase</item>
-        <item>circuitry_compass</item>
-        <item>circuitry_copilot</item>
-        <item>circuitry_discord</item>
-        <item>circuitry_docker</item>
-        <item>circuitry_downloads</item>
-        <item>circuitry_drive</item>
-        <item>circuitry_ebay</item>
-        <item>circuitry_etsy</item>
-        <item>circuitry_facebook</item>
-        <item>circuitry_facetime</item>
-        <item>circuitry_files</item>
-        <item>circuitry_fitness</item>
-        <item>circuitry_flights</item>
-        <item>circuitry_gallery</item>
-        <item>circuitry_gemini</item>
-        <item>circuitry_github</item>
-        <item>circuitry_gitlab</item>
-        <item>circuitry_gmail</item>
-        <item>circuitry_grok</item>
-        <item>circuitry_heartrate</item>
-        <item>circuitry_instagram</item>
-        <item>circuitry_linkedin</item>
-        <item>circuitry_magnifier</item>
-        <item>circuitry_mail</item>
-        <item>circuitry_maps</item>
-        <item>circuitry_mastodon</item>
-        <item>circuitry_meditate</item>
-        <item>circuitry_messages</item>
-        <item>circuitry_midjourney</item>
-        <item>circuitry_mistral</item>
-        <item>circuitry_music</item>
-        <item>circuitry_netflix</item>
-        <item>circuitry_nfc</item>
-        <item>circuitry_notes</item>
-        <item>circuitry_notion</item>
-        <item>circuitry_npm</item>
-        <item>circuitry_outlook</item>
-        <item>circuitry_paypal</item>
-        <item>circuitry_perplexity</item>
-        <item>circuitry_phone</item>
-        <item>circuitry_photos</item>
-        <item>circuitry_pinterest</item>
-        <item>circuitry_podcasts</item>
-        <item>circuitry_qrcode</item>
-        <item>circuitry_recorder</item>
-        <item>circuitry_reddit</item>
-        <item>circuitry_revolut</item>
-        <item>circuitry_robinhood</item>
-        <item>circuitry_runway</item>
-        <item>circuitry_settings</item>
-        <item>circuitry_shazam</item>
-        <item>circuitry_shopify</item>
-        <item>circuitry_signal</item>
-        <item>circuitry_slack</item>
-        <item>circuitry_sleep</item>
-        <item>circuitry_snapchat</item>
-        <item>circuitry_soundcloud</item>
-        <item>circuitry_spotify</item>
-        <item>circuitry_stackoverflow</item>
-        <item>circuitry_stripe</item>
-        <item>circuitry_suno</item>
-        <item>circuitry_teams</item>
-        <item>circuitry_telegram</item>
-        <item>circuitry_terminal</item>
-        <item>circuitry_threads</item>
-        <item>circuitry_tiktok</item>
-        <item>circuitry_trello</item>
-        <item>circuitry_tumblr</item>
-        <item>circuitry_twitch</item>
-        <item>circuitry_uber</item>
-        <item>circuitry_venmo</item>
-        <item>circuitry_vlc</item>
-        <item>circuitry_vscode</item>
-        <item>circuitry_wallet</item>
-        <item>circuitry_waze</item>
-        <item>circuitry_whatsapp</item>
-        <item>circuitry_x</item>
-        <item>circuitry_youtube</item>
-        <item>circuitry_zoom</item>
-        <item>claude</item>
-        <item>claude_v1</item>
-        <item>claude_v2</item>
-        <item>claude_v3</item>
-        <item>claude_v4</item>
-        <item>claude_v5</item>
-        <item>clock</item>
-        <item>close</item>
-        <item>cloud</item>
-        <item>cloud_app</item>
-        <item>cloud_download</item>
-        <item>cloud_upload</item>
-        <item>code</item>
-        <item>coffee_cup</item>
-        <item>cognitive</item>
-        <item>compass</item>
-        <item>construction</item>
-        <item>contacts</item>
-        <item>copilot</item>
-        <item>copilot_v1</item>
-        <item>copilot_v2</item>
-        <item>copilot_v3</item>
-        <item>copilot_v4</item>
-        <item>database</item>
-        <item>deepseek</item>
-        <item>diamond</item>
-        <item>dice</item>
-        <item>display</item>
-        <item>document</item>
-        <item>download</item>
-        <item>duplicate</item>
-        <item>earth</item>
-        <item>eye</item>
-        <item>eye_closed</item>
-        <item>file_download</item>
-        <item>file_upload</item>
-        <item>film_play</item>
-        <item>filter</item>
-        <item>fingerprint</item>
-        <item>fitness</item>
-        <item>flag</item>
-        <item>flame</item>
-        <item>folder_closed</item>
-        <item>folder_open</item>
-        <item>gamepad</item>
-        <item>gauge</item>
-        <item>gemini</item>
-        <item>gemini_v1</item>
-        <item>gemini_v2</item>
-        <item>gemini_v3</item>
-        <item>gemini_v4</item>
-        <item>gift</item>
-        <item>globe</item>
-        <item>gps</item>
-        <item>graduation_hat</item>
-        <item>grid</item>
-        <item>grok</item>
-        <item>grok_v1</item>
-        <item>grok_v2</item>
-        <item>grok_v3</item>
-        <item>grok_v4</item>
-        <item>grok_v5_twitter</item>
-        <item>heart</item>
-        <item>heart_pulse</item>
-        <item>home</item>
-        <item>hourglass</item>
-        <item>ic_add_user</item>
-        <item>ic_ai_agent_bot</item>
-        <item>ic_ai_agent_network</item>
-        <item>ic_ai_agent_workflow</item>
-        <item>ic_ai_automation</item>
-        <item>ic_ai_brain</item>
-        <item>ic_ai_chip</item>
-        <item>ic_ai_data_processing</item>
-        <item>ic_ai_eye_vision</item>
-        <item>ic_ai_inference</item>
-        <item>ic_ai_model</item>
-        <item>ic_ai_pipeline</item>
-        <item>ic_ai_prompt</item>
-        <item>ic_ai_swarm</item>
-        <item>ic_ai_training</item>
-        <item>ic_airbnb</item>
-        <item>ic_airplane</item>
-        <item>ic_amazon</item>
-        <item>ic_antenna_signal</item>
-        <item>ic_antivirus</item>
-        <item>ic_apple_nutrition</item>
-        <item>ic_appletv</item>
-        <item>ic_archive_box</item>
-        <item>ic_at_symbol</item>
-        <item>ic_auction_gavel</item>
-        <item>ic_audit_log</item>
-        <item>ic_bandage</item>
-        <item>ic_bank</item>
-        <item>ic_barcode</item>
-        <item>ic_battery</item>
-        <item>ic_bereal</item>
-        <item>ic_bicycle</item>
-        <item>ic_blog_post</item>
-        <item>ic_bluesky</item>
-        <item>ic_bluetooth</item>
-        <item>ic_bookmark</item>
-        <item>ic_briefcase</item>
-        <item>ic_broadcast</item>
-        <item>ic_browser</item>
-        <item>ic_bug_virus</item>
-        <item>ic_calculator</item>
-        <item>ic_calendar</item>
-        <item>ic_camera</item>
-        <item>ic_capacitor</item>
-        <item>ic_car</item>
-        <item>ic_certificate</item>
-        <item>ic_chart_pie</item>
-        <item>ic_chat_message</item>
-        <item>ic_chatbot</item>
-        <item>ic_chatgpt</item>
-        <item>ic_circuit_chip</item>
-        <item>ic_clapperboard</item>
-        <item>ic_claude</item>
-        <item>ic_clipboard</item>
-        <item>ic_clock</item>
-        <item>ic_clock_time</item>
-        <item>ic_cloud</item>
-        <item>ic_coinbase</item>
-        <item>ic_coins_finance</item>
-        <item>ic_comment</item>
-        <item>ic_community</item>
-        <item>ic_compass</item>
-        <item>ic_contact_book</item>
-        <item>ic_copilot</item>
-        <item>ic_coupon</item>
-        <item>ic_cpu_processor</item>
-        <item>ic_credit_card</item>
-        <item>ic_deep_learning</item>
-        <item>ic_delivery_truck</item>
-        <item>ic_diamond_premium</item>
-        <item>ic_diode</item>
-        <item>ic_discord</item>
-        <item>ic_dislike_thumbs_down</item>
-        <item>ic_dna</item>
-        <item>ic_docker</item>
-        <item>ic_download</item>
-        <item>ic_downloads</item>
-        <item>ic_drive</item>
-        <item>ic_dumbbell</item>
-        <item>ic_ebay</item>
-        <item>ic_email</item>
-        <item>ic_emoji_reaction</item>
-        <item>ic_encrypted</item>
-        <item>ic_equalizer</item>
-        <item>ic_etsy</item>
-        <item>ic_eye_surveillance</item>
-        <item>ic_facebook</item>
-        <item>ic_facetime</item>
-        <item>ic_files</item>
-        <item>ic_film_movie</item>
-        <item>ic_fingerprint</item>
-        <item>ic_fire_flame</item>
-        <item>ic_firewall</item>
-        <item>ic_fitness</item>
-        <item>ic_flights</item>
-        <item>ic_folder</item>
-        <item>ic_followers</item>
-        <item>ic_gallery</item>
-        <item>ic_gamepad</item>
-        <item>ic_gas_station</item>
-        <item>ic_gemini</item>
-        <item>ic_gift_box</item>
-        <item>ic_github</item>
-        <item>ic_gitlab</item>
-        <item>ic_globe</item>
-        <item>ic_gmail</item>
-        <item>ic_gpu_graphics</item>
-        <item>ic_grok</item>
-        <item>ic_group_team</item>
-        <item>ic_handshake</item>
-        <item>ic_hashtag</item>
-        <item>ic_headphones</item>
-        <item>ic_heart</item>
-        <item>ic_heartrate</item>
-        <item>ic_help_question</item>
-        <item>ic_home</item>
-        <item>ic_hourglass</item>
-        <item>ic_image_photo</item>
-        <item>ic_inbox</item>
-        <item>ic_info</item>
-        <item>ic_instagram</item>
-        <item>ic_invite</item>
-        <item>ic_key</item>
-        <item>ic_language_globe</item>
-        <item>ic_leaf</item>
-        <item>ic_lightbulb_idea</item>
-        <item>ic_lightning</item>
-        <item>ic_like_thumbs_up</item>
-        <item>ic_link_chain</item>
-        <item>ic_linkedin</item>
-        <item>ic_location_pin</item>
-        <item>ic_lock</item>
-        <item>ic_lungs</item>
-        <item>ic_machine_learning</item>
-        <item>ic_magnifier</item>
-        <item>ic_mail</item>
-        <item>ic_map</item>
-        <item>ic_maps</item>
-        <item>ic_mastodon</item>
-        <item>ic_meditate</item>
-        <item>ic_megaphone</item>
-        <item>ic_messages</item>
-        <item>ic_microphone</item>
-        <item>ic_midjourney</item>
-        <item>ic_mistral</item>
-        <item>ic_moon</item>
-        <item>ic_motherboard</item>
-        <item>ic_mountain</item>
-        <item>ic_music</item>
-        <item>ic_music_note</item>
-        <item>ic_navigation_arrow</item>
-        <item>ic_netflix</item>
-        <item>ic_neural_network</item>
-        <item>ic_nfc</item>
-        <item>ic_notes</item>
-        <item>ic_notes_document</item>
-        <item>ic_notification_bell</item>
-        <item>ic_notion</item>
-        <item>ic_npm</item>
-        <item>ic_outlook</item>
-        <item>ic_package_box</item>
-        <item>ic_palette_art</item>
-        <item>ic_parking</item>
-        <item>ic_paypal</item>
-        <item>ic_pcb_board</item>
-        <item>ic_pen_edit</item>
-        <item>ic_perplexity</item>
-        <item>ic_phone</item>
-        <item>ic_phone_call</item>
-        <item>ic_photos</item>
-        <item>ic_piano_keys</item>
-        <item>ic_pill_medicine</item>
-        <item>ic_pin_thumbtack</item>
-        <item>ic_pinterest</item>
-        <item>ic_play_button</item>
-        <item>ic_podcast</item>
-        <item>ic_podcasts</item>
-        <item>ic_power_button</item>
-        <item>ic_presentation</item>
-        <item>ic_printer</item>
-        <item>ic_privacy</item>
-        <item>ic_pulse_heartbeat</item>
-        <item>ic_qr_code</item>
-        <item>ic_qrcode</item>
-        <item>ic_radio</item>
-        <item>ic_rain</item>
-        <item>ic_rainbow</item>
-        <item>ic_ram_memory</item>
-        <item>ic_receipt</item>
-        <item>ic_recorder</item>
-        <item>ic_reddit</item>
-        <item>ic_refresh_sync</item>
-        <item>ic_resistor</item>
-        <item>ic_revolut</item>
-        <item>ic_robinhood</item>
-        <item>ic_robot_arm</item>
-        <item>ic_rocket_launch</item>
-        <item>ic_route_path</item>
-        <item>ic_running_person</item>
-        <item>ic_runway</item>
-        <item>ic_satellite</item>
-        <item>ic_satellite_dish</item>
-        <item>ic_scales_balance</item>
-        <item>ic_scanner</item>
-        <item>ic_search</item>
-        <item>ic_settings</item>
-        <item>ic_settings_slider</item>
-        <item>ic_share</item>
-        <item>ic_shazam</item>
-        <item>ic_shield_check</item>
-        <item>ic_ship_boat</item>
-        <item>ic_shopify</item>
-        <item>ic_shopping_bag</item>
-        <item>ic_shopping_cart</item>
-        <item>ic_signal</item>
-        <item>ic_sim_card</item>
-        <item>ic_slack</item>
-        <item>ic_sleep</item>
-        <item>ic_sms</item>
-        <item>ic_snapchat</item>
-        <item>ic_snowflake</item>
-        <item>ic_social_feed</item>
-        <item>ic_soundcloud</item>
-        <item>ic_speaker</item>
-        <item>ic_spotify</item>
-        <item>ic_spotlight</item>
-        <item>ic_stackoverflow</item>
-        <item>ic_stamp</item>
-        <item>ic_stethoscope</item>
-        <item>ic_store_shop</item>
-        <item>ic_streaming</item>
-        <item>ic_stripe</item>
-        <item>ic_sun</item>
-        <item>ic_suno</item>
-        <item>ic_syringe</item>
-        <item>ic_tag_label</item>
-        <item>ic_target_goal</item>
-        <item>ic_task_checklist</item>
-        <item>ic_teams</item>
-        <item>ic_telegram</item>
-        <item>ic_terminal</item>
-        <item>ic_thermometer</item>
-        <item>ic_threads</item>
-        <item>ic_ticket</item>
-        <item>ic_tiktok</item>
-        <item>ic_toggle_switch</item>
-        <item>ic_tornado</item>
-        <item>ic_traffic_light</item>
-        <item>ic_train</item>
-        <item>ic_transistor</item>
-        <item>ic_translate</item>
-        <item>ic_trash_delete</item>
-        <item>ic_tree</item>
-        <item>ic_trello</item>
-        <item>ic_trophy</item>
-        <item>ic_tumblr</item>
-        <item>ic_tv_display</item>
-        <item>ic_twitch</item>
-        <item>ic_two_factor_auth</item>
-        <item>ic_uber</item>
-        <item>ic_umbrella</item>
-        <item>ic_unlock</item>
-        <item>ic_upload</item>
-        <item>ic_usb_connector</item>
-        <item>ic_user_profile</item>
-        <item>ic_venmo</item>
-        <item>ic_verified_badge</item>
-        <item>ic_video_call</item>
-        <item>ic_vinyl_record</item>
-        <item>ic_vlc</item>
-        <item>ic_voice_assistant</item>
-        <item>ic_volume_audio</item>
-        <item>ic_vpn</item>
-        <item>ic_vr_headset</item>
-        <item>ic_vscode</item>
-        <item>ic_wallet</item>
-        <item>ic_water_drop</item>
-        <item>ic_wave_ocean</item>
-        <item>ic_waze</item>
-        <item>ic_whatsapp</item>
-        <item>ic_wheelchair</item>
-        <item>ic_wifi</item>
-        <item>ic_wind</item>
-        <item>ic_wishlist</item>
-        <item>ic_x</item>
-        <item>ic_yoga_meditation</item>
-        <item>ic_youtube</item>
-        <item>ic_zoom</item>
-        <item>inbox</item>
-        <item>info_circle</item>
-        <item>instagram_v1</item>
-        <item>instagram_v2</item>
-        <item>keyboard</item>
-        <item>laptop</item>
-        <item>layers</item>
-        <item>leaf</item>
-        <item>license</item>
-        <item>lightbulb</item>
-        <item>lightning</item>
-        <item>link</item>
-        <item>list</item>
-        <item>lock</item>
-        <item>lock_open</item>
-        <item>machine_learning</item>
-        <item>magic_wand</item>
-        <item>mail</item>
-        <item>manus</item>
-        <item>map</item>
-        <item>maximise</item>
-        <item>message</item>
-        <item>meta_ai</item>
-        <item>microphone</item>
-        <item>minimise</item>
-        <item>minus</item>
-        <item>moon</item>
-        <item>music</item>
-        <item>nation_afghanistan</item>
-        <item>nation_australia</item>
-        <item>nation_bangladesh</item>
-        <item>nation_cricket_ball</item>
-        <item>nation_england</item>
-        <item>nation_icc_trophy</item>
-        <item>nation_india</item>
-        <item>nation_ireland</item>
-        <item>nation_netherlands</item>
-        <item>nation_new_zealand</item>
-        <item>nation_pakistan</item>
-        <item>nation_scotland</item>
-        <item>nation_south_africa</item>
-        <item>nation_sri_lanka</item>
-        <item>nation_west_indies</item>
-        <item>nation_zimbabwe</item>
-        <item>newspaper</item>
-        <item>notification</item>
-        <item>notion_v1</item>
-        <item>notion_v2</item>
-        <item>notion_v3</item>
-        <item>paper_plane</item>
-        <item>paperclip</item>
-        <item>password</item>
-        <item>paw</item>
-        <item>perplexity</item>
-        <item>phone_portrait</item>
-        <item>play_button</item>
-        <item>plus</item>
-        <item>podcast</item>
-        <item>pushpin</item>
-        <item>question_circle</item>
-        <item>record</item>
-        <item>redo</item>
-        <item>refresh</item>
-        <item>rocket</item>
-        <item>search</item>
-        <item>security</item>
-        <item>server</item>
-        <item>settings</item>
-        <item>share</item>
-        <item>shuffle</item>
-        <item>signal_full</item>
-        <item>signal_none</item>
-        <item>sliders</item>
-        <item>smile</item>
-        <item>snapchat_v1</item>
-        <item>speaker</item>
-        <item>speech_bubble</item>
-        <item>sports_archery</item>
-        <item>sports_baseball</item>
-        <item>sports_basketball</item>
-        <item>sports_boots</item>
-        <item>sports_boxing</item>
-        <item>sports_crest</item>
-        <item>sports_cricket_bat_ball</item>
-        <item>sports_cycling</item>
-        <item>sports_dumbbell</item>
-        <item>sports_finish_flag</item>
-        <item>sports_football</item>
-        <item>sports_golf</item>
-        <item>sports_helmet</item>
-        <item>sports_hockey</item>
-        <item>sports_jersey</item>
-        <item>sports_leaderboard</item>
-        <item>sports_medal</item>
-        <item>sports_podium</item>
-        <item>sports_rugby</item>
-        <item>sports_running</item>
-        <item>sports_scoreboard</item>
-        <item>sports_stadium</item>
-        <item>sports_starting_blocks</item>
-        <item>sports_stopwatch</item>
-        <item>sports_swimming</item>
-        <item>sports_tennis</item>
-        <item>sports_trophy</item>
-        <item>sports_water_bottle</item>
-        <item>sports_weightlifting</item>
-        <item>sports_whistle</item>
-        <item>spotify_v1</item>
-        <item>spotify_v2</item>
-        <item>star</item>
-        <item>store</item>
-        <item>sun</item>
-        <item>sync</item>
-        <item>table</item>
-        <item>tag</item>
-        <item>target</item>
-        <item>terminal</item>
-        <item>terminal_alarm</item>
-        <item>terminal_ammobox</item>
-        <item>terminal_api</item>
-        <item>terminal_archive</item>
-        <item>terminal_back</item>
-        <item>terminal_barchart</item>
-        <item>terminal_battery</item>
-        <item>terminal_bell</item>
-        <item>terminal_biohazard</item>
-        <item>terminal_bluetooth</item>
-        <item>terminal_bookmark</item>
-        <item>terminal_bot_robot</item>
-        <item>terminal_brain</item>
-        <item>terminal_browser</item>
-        <item>terminal_bug</item>
-        <item>terminal_calculator</item>
-        <item>terminal_calendar</item>
-        <item>terminal_camera</item>
-        <item>terminal_canteen</item>
-        <item>terminal_chip_cpu</item>
-        <item>terminal_clipboard</item>
-        <item>terminal_clock</item>
-        <item>terminal_cloud</item>
-        <item>terminal_code_brackets</item>
-        <item>terminal_compass</item>
-        <item>terminal_contacts</item>
-        <item>terminal_dashboard</item>
-        <item>terminal_database</item>
-        <item>terminal_deploy</item>
-        <item>terminal_discord</item>
-        <item>terminal_docker</item>
-        <item>terminal_download</item>
-        <item>terminal_drive</item>
-        <item>terminal_email</item>
-        <item>terminal_error</item>
-        <item>terminal_explosion</item>
-        <item>terminal_eye</item>
-        <item>terminal_files</item>
-        <item>terminal_filter</item>
-        <item>terminal_fist</item>
-        <item>terminal_flame</item>
-        <item>terminal_flashlight</item>
-        <item>terminal_fullscreen</item>
-        <item>terminal_gallery</item>
-        <item>terminal_gauge</item>
-        <item>terminal_gear_cog</item>
-        <item>terminal_git</item>
-        <item>terminal_github</item>
-        <item>terminal_google_maps</item>
-        <item>terminal_grid</item>
-        <item>terminal_heart</item>
-        <item>terminal_helmet</item>
-        <item>terminal_home</item>
-        <item>terminal_info</item>
-        <item>terminal_instagram</item>
-        <item>terminal_lightning</item>
-        <item>terminal_linechart</item>
-        <item>terminal_linkedin</item>
-        <item>terminal_lock</item>
-        <item>terminal_map_wasteland</item>
-        <item>terminal_maps</item>
-        <item>terminal_maximize</item>
-        <item>terminal_medkit</item>
-        <item>terminal_messages</item>
-        <item>terminal_minimize</item>
-        <item>terminal_music</item>
-        <item>terminal_netflix</item>
-        <item>terminal_network</item>
-        <item>terminal_notes</item>
-        <item>terminal_notion</item>
-        <item>terminal_package</item>
-        <item>terminal_phone</item>
-        <item>terminal_piechart</item>
-        <item>terminal_play</item>
-        <item>terminal_power_nuclear</item>
-        <item>terminal_question</item>
-        <item>terminal_radar</item>
-        <item>terminal_radiation</item>
-        <item>terminal_reddit</item>
-        <item>terminal_refresh</item>
-        <item>terminal_satellite</item>
-        <item>terminal_search</item>
-        <item>terminal_server</item>
-        <item>terminal_settings</item>
-        <item>terminal_share</item>
-        <item>terminal_shield</item>
-        <item>terminal_signal_antenna</item>
-        <item>terminal_skull</item>
-        <item>terminal_sort</item>
-        <item>terminal_spotify</item>
-        <item>terminal_star</item>
-        <item>terminal_success</item>
-        <item>terminal_sync</item>
-        <item>terminal_tag</item>
-        <item>terminal_target_crosshair</item>
-        <item>terminal_telegram</item>
-        <item>terminal_terminal_prompt</item>
-        <item>terminal_tiktok</item>
-        <item>terminal_twitter_x</item>
-        <item>terminal_upload</item>
-        <item>terminal_vault</item>
-        <item>terminal_warning</item>
-        <item>terminal_whatsapp</item>
-        <item>terminal_wifi</item>
-        <item>terminal_wrench</item>
-        <item>terminal_youtube</item>
-        <item>terminal_zoomin</item>
-        <item>terminal_zoomout</item>
-        <item>thumbs_down</item>
-        <item>thumbs_up</item>
-        <item>ticket</item>
-        <item>timeline</item>
-        <item>todo</item>
-        <item>toggle</item>
-        <item>train</item>
-        <item>trash</item>
-        <item>trophy</item>
-        <item>tv_mode</item>
-        <item>undo</item>
-        <item>upload</item>
-        <item>user</item>
-        <item>user_add</item>
-        <item>user_circle</item>
-        <item>users</item>
-        <item>video</item>
-        <item>volume_high</item>
-        <item>volume_muted</item>
-        <item>wallet</item>
-        <item>warning_circle</item>
-        <item>whatsapp_v1</item>
-        <item>whatsapp_v2</item>
-        <item>wifi</item>
-        <item>wifi_none</item>
-        <item>window</item>
-        <item>xeno_ai_core</item>
-        <item>xeno_alarm</item>
-        <item>xeno_algorithm</item>
-        <item>xeno_api</item>
-        <item>xeno_bank</item>
-        <item>xeno_biolume</item>
-        <item>xeno_black_hole</item>
-        <item>xeno_bluesky</item>
-        <item>xeno_brain</item>
-        <item>xeno_broadcast</item>
-        <item>xeno_bug</item>
-        <item>xeno_calendar</item>
-        <item>xeno_camera</item>
-        <item>xeno_cell</item>
-        <item>xeno_chart_down</item>
-        <item>xeno_chart_up</item>
-        <item>xeno_chatgpt</item>
-        <item>xeno_claude</item>
-        <item>xeno_clock</item>
-        <item>xeno_cloud</item>
-        <item>xeno_code</item>
-        <item>xeno_coin</item>
-        <item>xeno_comet</item>
-        <item>xeno_compass</item>
-        <item>xeno_copilot</item>
-        <item>xeno_crypto</item>
-        <item>xeno_crystal</item>
-        <item>xeno_data_stream</item>
-        <item>xeno_database</item>
-        <item>xeno_deep_learning</item>
-        <item>xeno_deploy</item>
-        <item>xeno_discord</item>
-        <item>xeno_dna</item>
-        <item>xeno_docker</item>
-        <item>xeno_download</item>
-        <item>xeno_encode</item>
-        <item>xeno_encrypt</item>
-        <item>xeno_equalizer</item>
-        <item>xeno_eye</item>
-        <item>xeno_files</item>
-        <item>xeno_filter</item>
-        <item>xeno_frequency</item>
-        <item>xeno_galaxy</item>
-        <item>xeno_gallery</item>
-        <item>xeno_gemini</item>
-        <item>xeno_git</item>
-        <item>xeno_gps</item>
-        <item>xeno_grok</item>
-        <item>xeno_headphones</item>
-        <item>xeno_healing</item>
-        <item>xeno_heart</item>
-        <item>xeno_hive_mind</item>
-        <item>xeno_home</item>
-        <item>xeno_inference</item>
-        <item>xeno_instagram</item>
-        <item>xeno_linkedin</item>
-        <item>xeno_lock</item>
-        <item>xeno_machine_learning</item>
-        <item>xeno_mail</item>
-        <item>xeno_map</item>
-        <item>xeno_mastodon</item>
-        <item>xeno_meditation</item>
-        <item>xeno_memory_bank</item>
-        <item>xeno_messages</item>
-        <item>xeno_moon</item>
-        <item>xeno_music</item>
-        <item>xeno_mycelium</item>
-        <item>xeno_nebula</item>
-        <item>xeno_netflix</item>
-        <item>xeno_network</item>
-        <item>xeno_neural</item>
-        <item>xeno_notification</item>
-        <item>xeno_pause</item>
-        <item>xeno_payment</item>
-        <item>xeno_phone</item>
-        <item>xeno_ping</item>
-        <item>xeno_planet</item>
-        <item>xeno_play</item>
-        <item>xeno_podcast</item>
-        <item>xeno_processor</item>
-        <item>xeno_pulse</item>
-        <item>xeno_quantum</item>
-        <item>xeno_receipt</item>
-        <item>xeno_receive</item>
-        <item>xeno_record</item>
-        <item>xeno_reddit</item>
-        <item>xeno_refresh</item>
-        <item>xeno_search</item>
-        <item>xeno_security</item>
-        <item>xeno_sensor</item>
-        <item>xeno_server</item>
-        <item>xeno_settings</item>
-        <item>xeno_share</item>
-        <item>xeno_signal</item>
-        <item>xeno_sleep</item>
-        <item>xeno_snapchat</item>
-        <item>xeno_sonar</item>
-        <item>xeno_soundcloud</item>
-        <item>xeno_spore</item>
-        <item>xeno_spotify</item>
-        <item>xeno_star</item>
-        <item>xeno_store</item>
-        <item>xeno_sun</item>
-        <item>xeno_sync</item>
-        <item>xeno_telegram</item>
-        <item>xeno_telepathy</item>
-        <item>xeno_terminal</item>
-        <item>xeno_threads</item>
-        <item>xeno_tiktok</item>
-        <item>xeno_tiktok_wave</item>
-        <item>xeno_translation</item>
-        <item>xeno_transmit</item>
-        <item>xeno_tumblr</item>
-        <item>xeno_unlock</item>
-        <item>xeno_upload</item>
-        <item>xeno_virus</item>
-        <item>xeno_volume</item>
-        <item>xeno_vpn</item>
-        <item>xeno_wallet</item>
-        <item>xeno_whatsapp</item>
-        <item>xeno_x_twitter</item>
-        <item>xeno_youtube</item>
-        <item>xeno_youtube_play</item>
-        <item>zoom_in</item>
-        <item>zoom_out</item>
-    </string-array>
     <string-array name="icon_pack_drawables">
         <item>alarm_clock</item>
         <item>analytics</item>
@@ -880,9 +22,7 @@
         <item>chart__line</item>
         <item>chat_bot</item>
         <item>chatgpt</item>
-        <item>chatgpt_v1</item>
         <item>chatgpt_v2</item>
-        <item>chatgpt_v3</item>
         <item>chatgpt_v4</item>
         <item>chatgpt_v5</item>
         <item>check</item>
@@ -989,7 +129,6 @@
         <item>claude_v1</item>
         <item>claude_v2</item>
         <item>claude_v3</item>
-        <item>claude_v4</item>
         <item>claude_v5</item>
         <item>clock</item>
         <item>close</item>
@@ -1005,8 +144,6 @@
         <item>contacts</item>
         <item>copilot</item>
         <item>copilot_v1</item>
-        <item>copilot_v2</item>
-        <item>copilot_v3</item>
         <item>copilot_v4</item>
         <item>database</item>
         <item>deepseek</item>
@@ -1042,10 +179,6 @@
         <item>graduation_hat</item>
         <item>grid</item>
         <item>grok</item>
-        <item>grok_v1</item>
-        <item>grok_v2</item>
-        <item>grok_v3</item>
-        <item>grok_v4</item>
         <item>grok_v5_twitter</item>
         <item>heart</item>
         <item>heart_pulse</item>
@@ -1053,18 +186,13 @@
         <item>hourglass</item>
         <item>ic_add_user</item>
         <item>ic_ai_agent_bot</item>
-        <item>ic_ai_agent_network</item>
         <item>ic_ai_agent_workflow</item>
         <item>ic_ai_automation</item>
         <item>ic_ai_brain</item>
         <item>ic_ai_chip</item>
-        <item>ic_ai_data_processing</item>
         <item>ic_ai_eye_vision</item>
         <item>ic_ai_inference</item>
-        <item>ic_ai_model</item>
-        <item>ic_ai_pipeline</item>
         <item>ic_ai_prompt</item>
-        <item>ic_ai_swarm</item>
         <item>ic_ai_training</item>
         <item>ic_airbnb</item>
         <item>ic_airplane</item>
@@ -1082,7 +210,6 @@
         <item>ic_barcode</item>
         <item>ic_battery</item>
         <item>ic_bereal</item>
-        <item>ic_bicycle</item>
         <item>ic_blog_post</item>
         <item>ic_bluesky</item>
         <item>ic_bluetooth</item>
@@ -1090,14 +217,11 @@
         <item>ic_briefcase</item>
         <item>ic_broadcast</item>
         <item>ic_browser</item>
-        <item>ic_bug_virus</item>
         <item>ic_calculator</item>
         <item>ic_calendar</item>
         <item>ic_camera</item>
-        <item>ic_capacitor</item>
         <item>ic_car</item>
         <item>ic_certificate</item>
-        <item>ic_chart_pie</item>
         <item>ic_chat_message</item>
         <item>ic_chatbot</item>
         <item>ic_chatgpt</item>
@@ -1106,12 +230,9 @@
         <item>ic_claude</item>
         <item>ic_clipboard</item>
         <item>ic_clock</item>
-        <item>ic_clock_time</item>
         <item>ic_cloud</item>
         <item>ic_coinbase</item>
-        <item>ic_coins_finance</item>
         <item>ic_comment</item>
-        <item>ic_community</item>
         <item>ic_compass</item>
         <item>ic_contact_book</item>
         <item>ic_copilot</item>
@@ -1120,8 +241,6 @@
         <item>ic_credit_card</item>
         <item>ic_deep_learning</item>
         <item>ic_delivery_truck</item>
-        <item>ic_diamond_premium</item>
-        <item>ic_diode</item>
         <item>ic_discord</item>
         <item>ic_dislike_thumbs_down</item>
         <item>ic_dna</item>
@@ -1134,7 +253,6 @@
         <item>ic_email</item>
         <item>ic_emoji_reaction</item>
         <item>ic_encrypted</item>
-        <item>ic_equalizer</item>
         <item>ic_etsy</item>
         <item>ic_eye_surveillance</item>
         <item>ic_facebook</item>
@@ -1147,7 +265,6 @@
         <item>ic_fitness</item>
         <item>ic_flights</item>
         <item>ic_folder</item>
-        <item>ic_followers</item>
         <item>ic_gallery</item>
         <item>ic_gamepad</item>
         <item>ic_gas_station</item>
@@ -1161,7 +278,6 @@
         <item>ic_grok</item>
         <item>ic_group_team</item>
         <item>ic_handshake</item>
-        <item>ic_hashtag</item>
         <item>ic_headphones</item>
         <item>ic_heart</item>
         <item>ic_heartrate</item>
@@ -1198,12 +314,9 @@
         <item>ic_mistral</item>
         <item>ic_moon</item>
         <item>ic_motherboard</item>
-        <item>ic_mountain</item>
         <item>ic_music</item>
         <item>ic_music_note</item>
-        <item>ic_navigation_arrow</item>
         <item>ic_netflix</item>
-        <item>ic_neural_network</item>
         <item>ic_nfc</item>
         <item>ic_notes</item>
         <item>ic_notes_document</item>
@@ -1211,7 +324,6 @@
         <item>ic_notion</item>
         <item>ic_npm</item>
         <item>ic_outlook</item>
-        <item>ic_package_box</item>
         <item>ic_palette_art</item>
         <item>ic_parking</item>
         <item>ic_paypal</item>
@@ -1223,7 +335,6 @@
         <item>ic_photos</item>
         <item>ic_piano_keys</item>
         <item>ic_pill_medicine</item>
-        <item>ic_pin_thumbtack</item>
         <item>ic_pinterest</item>
         <item>ic_play_button</item>
         <item>ic_podcast</item>
@@ -1232,7 +343,6 @@
         <item>ic_presentation</item>
         <item>ic_printer</item>
         <item>ic_privacy</item>
-        <item>ic_pulse_heartbeat</item>
         <item>ic_qr_code</item>
         <item>ic_qrcode</item>
         <item>ic_radio</item>
@@ -1243,13 +353,11 @@
         <item>ic_recorder</item>
         <item>ic_reddit</item>
         <item>ic_refresh_sync</item>
-        <item>ic_resistor</item>
         <item>ic_revolut</item>
         <item>ic_robinhood</item>
         <item>ic_robot_arm</item>
         <item>ic_rocket_launch</item>
         <item>ic_route_path</item>
-        <item>ic_running_person</item>
         <item>ic_runway</item>
         <item>ic_satellite</item>
         <item>ic_satellite_dish</item>
@@ -1257,21 +365,18 @@
         <item>ic_scanner</item>
         <item>ic_search</item>
         <item>ic_settings</item>
-        <item>ic_settings_slider</item>
         <item>ic_share</item>
         <item>ic_shazam</item>
         <item>ic_shield_check</item>
         <item>ic_ship_boat</item>
         <item>ic_shopify</item>
         <item>ic_shopping_bag</item>
-        <item>ic_shopping_cart</item>
         <item>ic_signal</item>
         <item>ic_sim_card</item>
         <item>ic_slack</item>
         <item>ic_sleep</item>
         <item>ic_sms</item>
         <item>ic_snapchat</item>
-        <item>ic_snowflake</item>
         <item>ic_social_feed</item>
         <item>ic_soundcloud</item>
         <item>ic_speaker</item>
@@ -1287,7 +392,6 @@
         <item>ic_suno</item>
         <item>ic_syringe</item>
         <item>ic_tag_label</item>
-        <item>ic_target_goal</item>
         <item>ic_task_checklist</item>
         <item>ic_teams</item>
         <item>ic_telegram</item>
@@ -1300,10 +404,8 @@
         <item>ic_tornado</item>
         <item>ic_traffic_light</item>
         <item>ic_train</item>
-        <item>ic_transistor</item>
         <item>ic_translate</item>
         <item>ic_trash_delete</item>
-        <item>ic_tree</item>
         <item>ic_trello</item>
         <item>ic_trophy</item>
         <item>ic_tumblr</item>
@@ -1317,9 +419,7 @@
         <item>ic_usb_connector</item>
         <item>ic_user_profile</item>
         <item>ic_venmo</item>
-        <item>ic_verified_badge</item>
         <item>ic_video_call</item>
-        <item>ic_vinyl_record</item>
         <item>ic_vlc</item>
         <item>ic_voice_assistant</item>
         <item>ic_volume_audio</item>
@@ -1331,12 +431,10 @@
         <item>ic_wave_ocean</item>
         <item>ic_waze</item>
         <item>ic_whatsapp</item>
-        <item>ic_wheelchair</item>
         <item>ic_wifi</item>
         <item>ic_wind</item>
         <item>ic_wishlist</item>
         <item>ic_x</item>
-        <item>ic_yoga_meditation</item>
         <item>ic_youtube</item>
         <item>ic_zoom</item>
         <item>inbox</item>
@@ -1385,7 +483,6 @@
         <item>nation_zimbabwe</item>
         <item>newspaper</item>
         <item>notification</item>
-        <item>notion_v1</item>
         <item>notion_v2</item>
         <item>notion_v3</item>
         <item>paper_plane</item>
@@ -1738,9 +835,7 @@
         <item>Chart  Line</item>
         <item>Chat Bot</item>
         <item>Chatgpt</item>
-        <item>Chatgpt V1</item>
         <item>Chatgpt V2</item>
-        <item>Chatgpt V3</item>
         <item>Chatgpt V4</item>
         <item>Chatgpt V5</item>
         <item>Check</item>
@@ -1847,7 +942,6 @@
         <item>Claude V1</item>
         <item>Claude V2</item>
         <item>Claude V3</item>
-        <item>Claude V4</item>
         <item>Claude V5</item>
         <item>Clock</item>
         <item>Close</item>
@@ -1863,8 +957,6 @@
         <item>Contacts</item>
         <item>Copilot</item>
         <item>Copilot V1</item>
-        <item>Copilot V2</item>
-        <item>Copilot V3</item>
         <item>Copilot V4</item>
         <item>Database</item>
         <item>Deepseek</item>
@@ -1900,10 +992,6 @@
         <item>Graduation Hat</item>
         <item>Grid</item>
         <item>Grok</item>
-        <item>Grok V1</item>
-        <item>Grok V2</item>
-        <item>Grok V3</item>
-        <item>Grok V4</item>
         <item>Grok V5 Twitter</item>
         <item>Heart</item>
         <item>Heart Pulse</item>
@@ -1911,18 +999,13 @@
         <item>Hourglass</item>
         <item>Add User</item>
         <item>Ai Agent Bot</item>
-        <item>Ai Agent Network</item>
         <item>Ai Agent Workflow</item>
         <item>Ai Automation</item>
         <item>Ai Brain</item>
         <item>Ai Chip</item>
-        <item>Ai Data Processing</item>
         <item>Ai Eye Vision</item>
         <item>Ai Inference</item>
-        <item>Ai Model</item>
-        <item>Ai Pipeline</item>
         <item>Ai Prompt</item>
-        <item>Ai Swarm</item>
         <item>Ai Training</item>
         <item>Airbnb</item>
         <item>Airplane</item>
@@ -1940,7 +1023,6 @@
         <item>Barcode</item>
         <item>Battery</item>
         <item>Bereal</item>
-        <item>Bicycle</item>
         <item>Blog Post</item>
         <item>Bluesky</item>
         <item>Bluetooth</item>
@@ -1948,14 +1030,11 @@
         <item>Briefcase</item>
         <item>Broadcast</item>
         <item>Browser</item>
-        <item>Bug Virus</item>
         <item>Calculator</item>
         <item>Calendar</item>
         <item>Camera</item>
-        <item>Capacitor</item>
         <item>Car</item>
         <item>Certificate</item>
-        <item>Chart Pie</item>
         <item>Chat Message</item>
         <item>Chatbot</item>
         <item>Chatgpt</item>
@@ -1964,12 +1043,9 @@
         <item>Claude</item>
         <item>Clipboard</item>
         <item>Clock</item>
-        <item>Clock Time</item>
         <item>Cloud</item>
         <item>Coinbase</item>
-        <item>Coins Finance</item>
         <item>Comment</item>
-        <item>Community</item>
         <item>Compass</item>
         <item>Contact Book</item>
         <item>Copilot</item>
@@ -1978,8 +1054,6 @@
         <item>Credit Card</item>
         <item>Deep Learning</item>
         <item>Delivery Truck</item>
-        <item>Diamond Premium</item>
-        <item>Diode</item>
         <item>Discord</item>
         <item>Dislike Thumbs Down</item>
         <item>Dna</item>
@@ -1992,7 +1066,6 @@
         <item>Email</item>
         <item>Emoji Reaction</item>
         <item>Encrypted</item>
-        <item>Equalizer</item>
         <item>Etsy</item>
         <item>Eye Surveillance</item>
         <item>Facebook</item>
@@ -2005,7 +1078,6 @@
         <item>Fitness</item>
         <item>Flights</item>
         <item>Folder</item>
-        <item>Followers</item>
         <item>Gallery</item>
         <item>Gamepad</item>
         <item>Gas Station</item>
@@ -2019,7 +1091,6 @@
         <item>Grok</item>
         <item>Group Team</item>
         <item>Handshake</item>
-        <item>Hashtag</item>
         <item>Headphones</item>
         <item>Heart</item>
         <item>Heartrate</item>
@@ -2056,12 +1127,9 @@
         <item>Mistral</item>
         <item>Moon</item>
         <item>Motherboard</item>
-        <item>Mountain</item>
         <item>Music</item>
         <item>Music Note</item>
-        <item>Navigation Arrow</item>
         <item>Netflix</item>
-        <item>Neural Network</item>
         <item>Nfc</item>
         <item>Notes</item>
         <item>Notes Document</item>
@@ -2069,7 +1137,6 @@
         <item>Notion</item>
         <item>Npm</item>
         <item>Outlook</item>
-        <item>Package Box</item>
         <item>Palette Art</item>
         <item>Parking</item>
         <item>Paypal</item>
@@ -2081,7 +1148,6 @@
         <item>Photos</item>
         <item>Piano Keys</item>
         <item>Pill Medicine</item>
-        <item>Pin Thumbtack</item>
         <item>Pinterest</item>
         <item>Play Button</item>
         <item>Podcast</item>
@@ -2090,7 +1156,6 @@
         <item>Presentation</item>
         <item>Printer</item>
         <item>Privacy</item>
-        <item>Pulse Heartbeat</item>
         <item>Qr Code</item>
         <item>Qrcode</item>
         <item>Radio</item>
@@ -2101,13 +1166,11 @@
         <item>Recorder</item>
         <item>Reddit</item>
         <item>Refresh Sync</item>
-        <item>Resistor</item>
         <item>Revolut</item>
         <item>Robinhood</item>
         <item>Robot Arm</item>
         <item>Rocket Launch</item>
         <item>Route Path</item>
-        <item>Running Person</item>
         <item>Runway</item>
         <item>Satellite</item>
         <item>Satellite Dish</item>
@@ -2115,21 +1178,18 @@
         <item>Scanner</item>
         <item>Search</item>
         <item>Settings</item>
-        <item>Settings Slider</item>
         <item>Share</item>
         <item>Shazam</item>
         <item>Shield Check</item>
         <item>Ship Boat</item>
         <item>Shopify</item>
         <item>Shopping Bag</item>
-        <item>Shopping Cart</item>
         <item>Signal</item>
         <item>Sim Card</item>
         <item>Slack</item>
         <item>Sleep</item>
         <item>Sms</item>
         <item>Snapchat</item>
-        <item>Snowflake</item>
         <item>Social Feed</item>
         <item>Soundcloud</item>
         <item>Speaker</item>
@@ -2145,7 +1205,6 @@
         <item>Suno</item>
         <item>Syringe</item>
         <item>Tag Label</item>
-        <item>Target Goal</item>
         <item>Task Checklist</item>
         <item>Teams</item>
         <item>Telegram</item>
@@ -2158,10 +1217,8 @@
         <item>Tornado</item>
         <item>Traffic Light</item>
         <item>Train</item>
-        <item>Transistor</item>
         <item>Translate</item>
         <item>Trash Delete</item>
-        <item>Tree</item>
         <item>Trello</item>
         <item>Trophy</item>
         <item>Tumblr</item>
@@ -2175,9 +1232,7 @@
         <item>Usb Connector</item>
         <item>User Profile</item>
         <item>Venmo</item>
-        <item>Verified Badge</item>
         <item>Video Call</item>
-        <item>Vinyl Record</item>
         <item>Vlc</item>
         <item>Voice Assistant</item>
         <item>Volume Audio</item>
@@ -2189,12 +1244,10 @@
         <item>Wave Ocean</item>
         <item>Waze</item>
         <item>Whatsapp</item>
-        <item>Wheelchair</item>
         <item>Wifi</item>
         <item>Wind</item>
         <item>Wishlist</item>
         <item>X</item>
-        <item>Yoga Meditation</item>
         <item>Youtube</item>
         <item>Zoom</item>
         <item>Inbox</item>
@@ -2243,7 +1296,6 @@
         <item>Nation Zimbabwe</item>
         <item>Newspaper</item>
         <item>Notification</item>
-        <item>Notion V1</item>
         <item>Notion V2</item>
         <item>Notion V3</item>
         <item>Paper Plane</item>

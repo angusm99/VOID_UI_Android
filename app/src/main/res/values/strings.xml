@@ -8,7 +8,12 @@
     <!-- MainActivity strings -->
     <string name="title_void">VOID UI</string>
     <string name="title_icon_pack">ICON PACK</string>
-    <string name="icons_count_format">%1$s icons</string>
+    <string name="icons_count_of">%1$d of %2$d icons</string>
+    <string name="search_hint">Search icons</string>
+    <string name="icon_colour_label">ICON COLOUR</string>
+    <string name="custom_colour_title">Custom colour</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
     <string name="apply_hint">Apply in Nova, Niagara, Apex, Action or Lawnchair launcher</string>
     <string name="launcher_instructions">Open your launcher settings\nLook for \'Icon pack\' or \'Themes\'\nSelect VOID UI</string>
     <string name="privacy_policy">Privacy: VOID UI does not collect or share user data.</string>

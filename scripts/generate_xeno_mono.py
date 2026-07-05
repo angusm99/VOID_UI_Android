@@ -17,8 +17,8 @@ ROOT = Path(r"C:\Users\User\CLAUDE\VOID_UI")
 MASTER_XENO = ROOT / "01_ICON_PACK_MASTER" / "ICON_MASTER" / "09_XENOCOMM"
 MASTER_TERMINAL = ROOT / "01_ICON_PACK_MASTER" / "ICON_MASTER" / "06_TERMINAL"
 RES = ROOT / "02_ANDROID_ICON_PACK_APP" / "VOID_UI_Android" / "app" / "src" / "main" / "res"
-DRAWABLE = RES / "drawable"
-NODPI = RES / "drawable-nodpi"
+DRAWABLE = RES / "drawable-nodpi"  # single icon dir since v1.9.8 (drawable/ was a byte-identical duplicate)
+NODPI = DRAWABLE
 
 WHITE = "#FFFFFFFF"
 ANS = "{http://schemas.android.com/apk/res/android}"

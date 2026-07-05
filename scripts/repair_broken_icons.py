@@ -287,7 +287,7 @@ def strip_icon_array(xml_path, remove_stems):
     return removed
 
 def main():
-    drawable_dir = RES / "drawable"
+    drawable_dir = RES / "drawable-nodpi"
     nodpi_dir = RES / "drawable-nodpi"
     icon_array_xml = RES / "xml" / "icon_pack.xml"
     appfilter_xml = RES / "xml" / "appfilter.xml"
@@ -307,7 +307,7 @@ def main():
             print(f"  WARN: conversion produced no paths for {stem}, will remove instead")
             REMOVE.append(stem)
             continue
-        for target_dir in (drawable_dir, nodpi_dir):
+        for target_dir in (nodpi_dir,):
             (target_dir / f"{stem}.xml").write_text(vector, encoding="utf-8")
         print(f"  FIXED: {stem}  ({len(test_lines)} path(s))")
         fixed += 1

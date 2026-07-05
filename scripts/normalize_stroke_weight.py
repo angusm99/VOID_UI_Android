@@ -14,7 +14,7 @@ import re, statistics, xml.etree.ElementTree as ET
 from pathlib import Path
 
 RES = Path(r"C:\Users\User\CLAUDE\VOID_UI\02_ANDROID_ICON_PACK_APP\VOID_UI_Android\app\src\main\res")
-DIRS = [RES / "drawable", RES / "drawable-nodpi"]
+DIRS = [RES / "drawable-nodpi"]
 ANS = "{http://schemas.android.com/apk/res/android}"
 TARGET = 14.0
 SKIP = ("circuitry_", "nation_", "xeno_", "terminal_")
@@ -35,7 +35,7 @@ def median_eff(path_xml):
 def main():
     # Use drawable/ as the source of truth for which files & factors; mirror to nodpi.
     changed = skipped = 0
-    for f in sorted((RES / "drawable").glob("*.xml")):
+    for f in sorted((RES / "drawable-nodpi").glob("*.xml")):
         if f.stem.startswith(SKIP):
             continue
         text = f.read_text(encoding="utf-8")

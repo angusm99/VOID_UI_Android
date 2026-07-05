@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
         root.setPadding(dp(16), dp(18), dp(16), 0);
 
         TextView title = new TextView(this);
-        title.setText("VOID UI");
+        title.setText(R.string.title_void);
         title.setTextColor(WHITE);
         title.setTextSize(28);
         title.setGravity(Gravity.CENTER_VERTICAL);
@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
         EditText search = new EditText(this);
         search.setSingleLine(true);
-        search.setHint("Search icons");
+        search.setHint(R.string.search_hint);
         search.setHintTextColor(Color.rgb(90, 90, 90));
         search.setTextColor(WHITE);
         search.setTextSize(15);
@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Colour tint row (global icon colour)
         TextView tintLabel = new TextView(this);
-        tintLabel.setText("ICON COLOUR");
+        tintLabel.setText(R.string.icon_colour_label);
         tintLabel.setTextColor(MUTED);
         tintLabel.setTextSize(11);
         tintLabel.setLetterSpacing(0.10f);
@@ -344,10 +344,10 @@ public class MainActivity extends AppCompatActivity {
         }
 
         new AlertDialog.Builder(this)
-                .setTitle("Custom colour")
+                .setTitle(R.string.custom_colour_title)
                 .setView(layout)
-                .setPositiveButton("Apply", (d, w) -> setTint(Color.rgb(rgb[0], rgb[1], rgb[2])))
-                .setNegativeButton("Cancel", null)
+                .setPositiveButton(R.string.apply, (d, w) -> setTint(Color.rgb(rgb[0], rgb[1], rgb[2])))
+                .setNegativeButton(R.string.cancel, null)
                 .show();
     }
 
@@ -400,7 +400,7 @@ public class MainActivity extends AppCompatActivity {
             iconGrid.addView(iconTile(icon));
             shown++;
         }
-        countView.setText(shown + " of " + icons.size() + " icons");
+        countView.setText(getString(R.string.icons_count_of, shown, icons.size()));
     }
 
     private View iconTile(IconItem icon) {
@@ -413,7 +413,6 @@ public class MainActivity extends AppCompatActivity {
         image.setImageResource(icon.resourceId);
         image.setAdjustViewBounds(true);
         image.setScaleType(ImageView.ScaleType.FIT_CENTER);
-        image.setBackgroundColor(BLACK);
         if (currentTint == WHITE) {
             image.clearColorFilter();
         } else {
@@ -454,7 +453,10 @@ public class MainActivity extends AppCompatActivity {
         if (id.startsWith("nation_")) return "Cricket";
         if (id.matches(".*_v[0-9]+$")) return "Variants";
 
-        if (containsAny(text, "ai", "chatgpt", "claude", "gemini", "grok", "copilot", "perplexity", "mistral", "midjourney", "suno", "bot", "neural", "model")) {
+        // "ai" must match as a whole word — a bare substring check would drag
+        // mail/gmail/airbnb/paint etc. into the AI category.
+        if (hasWord(text, "ai")
+                || containsAny(text, "chatgpt", "claude", "gemini", "grok", "copilot", "perplexity", "mistral", "midjourney", "suno", "bot", "neural", "model")) {
             return "AI";
         }
         if (containsAny(text, "instagram", "tiktok", "snapchat", "reddit", "threads", "facebook", "linkedin", "discord", "telegram", "whatsapp", "message", "mail", "gmail", "outlook", "social")) {
@@ -487,6 +489,15 @@ public class MainActivity extends AppCompatActivity {
     private boolean containsAny(String text, String... needles) {
         for (String needle : needles) {
             if (text.contains(needle)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private boolean hasWord(String text, String word) {
+        for (String token : text.split("[^a-z0-9]+")) {
+            if (token.equals(word)) {
                 return true;
             }
         }

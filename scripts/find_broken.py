@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(r"C:\Users\User\CLAUDE\VOID_UI")
 MASTER = ROOT / "01_ICON_PACK_MASTER" / "ICON_MASTER"
-DRAWABLE = ROOT / "02_ANDROID_ICON_PACK_APP" / "VOID_UI_Android" / "app" / "src" / "main" / "res" / "drawable"
+DRAWABLE = ROOT / "02_ANDROID_ICON_PACK_APP" / "VOID_UI_Android" / "app" / "src" / "main" / "res" / "drawable-nodpi"
 
 ANS = "http://schemas.android.com/apk/res/android"
 

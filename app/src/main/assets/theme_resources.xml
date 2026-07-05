@@ -58,7 +58,7 @@
     <AppIcon name="com.google.android.apps.bard/com.google.android.apps.bard.MainActivity" image="gemini_v2"/>
     <AppIcon name="ai.perplexity.app.android/ai.perplexity.app.android.MainActivity" image="perplexity"/>
     <AppIcon name="com.microsoft.copilot/com.microsoft.copilot.MainActivity" image="copilot_v1"/>
-    <AppIcon name="com.xai.grok/com.xai.grok.MainActivity" image="grok_v1"/>
+    <AppIcon name="com.xai.grok/com.xai.grok.MainActivity" image="grok"/>
     <AppIcon name="com.deepseek.app/com.deepseek.app.MainActivity" image="deepseek"/>
     <AppIcon name="com.google.android.apps.googleassistant/com.google.android.apps.assistant.AssistantActivity" image="bot"/>
     <AppIcon name="com.amazon.dee.app/com.amazon.dee.app.ui.MainActivity" image="chat_bot"/>
@@ -192,7 +192,7 @@
     <AppIcon name="com.sec.android.app.myfiles/com.sec.android.app.myfiles.ui.MainActivity" image="ic_files"/>
     <AppIcon name="ai.perplexity.app.android/ai.perplexity.app.android.ui.main.MainActivity" image="ic_perplexity"/>
     <AppIcon name="ai.x.grok/ai.x.grok.main.GrokActivity" image="ic_grok"/>
-    <AppIcon name="com.anthropic.claude/com.anthropic.claude.mainactivity.MainActivity" image="claude_v4"/>
+    <AppIcon name="com.anthropic.claude/com.anthropic.claude.mainactivity.MainActivity" image="claude"/>
     <AppIcon name="com.google.android.apps.authenticator2/com.google.android.apps.authenticator2.main.MainActivity" image="fingerprint"/>
     <AppIcon name="com.google.android.apps.fitness/com.google.android.apps.fitness.welcome.WelcomeActivity" image="ic_heartrate"/>
     <AppIcon name="com.google.android.apps.googleassistant/com.google.android.apps.googleassistant.AssistantActivity" image="ic_voice_assistant"/>
@@ -372,7 +372,7 @@
     <AppIcon name="za.co.fnb.connect.itt/.gui.ZoneWelcomeActivity" image="ic_bank"/>
     <AppIcon name="za.co.gotyme/com.tymex.splashScreen.resources.Default" image="ic_wallet"/>
     <AppIcon name="za.co.mip.mobicredApp/com.example.mobicred.MainActivity" image="ic_credit_card"/>
-    <AppIcon name="za.co.shoprite.sixty60/.MainActivity" image="ic_shopping_cart"/>
+    <AppIcon name="za.co.shoprite.sixty60/.MainActivity" image="ic_shopping_bag"/>
     <AppIcon name="za.co.stargate.starlitemobi/com.embarcadero.firemonkey.FMXNativeActivity" image="ic_store_shop"/>
     <AppIcon name="za.co.vodacom.android.app/com.myvodacomx.MainActivity" image="ic_signal"/>
     <AppIcon name="za.org.elections.iecapp/crc641b0d860257576a70.SplashActivity" image="flag"/>
